@@ -11,9 +11,12 @@ Rad is a tool developed by
 
 # Advanced: [RAD API](home.md)
 
-For an advanced use we advice to use RAD as a Python library which can be easily integrated into the research workflow.
+For advanced use, we suggest using RAD as a Python library that can be easily integrated into the research workflow.
 
 # How we handle CT, PET, and MR data:
+##DICOM:
+Text text text
+##NIFTI:
  
 
 # Contact us:
