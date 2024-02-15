@@ -6,7 +6,6 @@ Rad is a tool developed by
 # RAD user manual:
 - [Resampling](resampling.md)
 - [Filtering](filtering.md)
-- [Radiomics](radiomics.md)
 ---
 
 # Advanced: [RAD API](home.md)
