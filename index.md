@@ -15,10 +15,13 @@ Rad is a tool developed by
 
 For advanced use, we suggest using RAD as a Python library that can be easily integrated into the research workflow.
 
-# How we handle CT, PET, and MR data:
-##DICOM:
-Text text text
-##NIFTI:
+# How RAD handles CT, PET, and MR data:
+Before the rad use one needs to organize the data in folders, folder names should be integers.
+## DICOM:
+Zrad assumes that in each patient folder only one dicom series and one rt struct file.
+### CT
+## NIFTI:
+Rad supports both .nii and .nii.gz data types.
  
 
 # Contact us:
