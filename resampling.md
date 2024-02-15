@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Page Title
+title: RAD: RESAMPLING
 theme: architect
 ---
 
-HOME!
+#
