@@ -1,4 +1,6 @@
-# My Website
+# About RAD:
+
+Rad is a tool developed by
 
 ---
 
