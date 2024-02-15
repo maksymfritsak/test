@@ -1,5 +1,6 @@
 ---
 layout: default
-title: RAD: RESAMPLING
+title: RAD: RESAMPLIN
 theme: architect
 ---
+#Resampling with RAD
