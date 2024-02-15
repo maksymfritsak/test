@@ -2,12 +2,13 @@
 
 ---
 
-## Table of Contents
+## Menu
 
-- [About Me](#about-me)
-- [Projects](#projects)
-- [Blog](#blog)
-- [Contact Me](#contact-me)
+- [Home](home.md)
+- [About Me](about.md)
+- [Projects](projects.md)
+- [Blog](blog.md)
+- [Contact Me](contact.md)
 
 ---
 
