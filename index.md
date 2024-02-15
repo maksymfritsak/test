@@ -7,11 +7,6 @@ Rad is a tool developed by
 # RAD user manual:
 
 - [Resampling](home.md)
-- [About Me](about.md)
-- [Projects](projects.md)
-- [Blog](blog.md)
-- [Contact Me](contact.md)
-
 ---
 #How we handle CT, PET, and MR data:
  
