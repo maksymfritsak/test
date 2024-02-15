@@ -1,46 +1,22 @@
-# About RAD:
+#About RAD:
 
 Rad is a tool developed by
 
 ---
 
-## Menu
+# RAD user manual:
 
-- [Home](home.md)
+- [Resampling](home.md)
 - [About Me](about.md)
 - [Projects](projects.md)
 - [Blog](blog.md)
 - [Contact Me](contact.md)
 
 ---
+#How we handle CT, PET, and MR data:
+ 
 
-## About Me
-
-I'm a passionate developer interested in creating amazing web experiences.
-
----
-
-## Projects
-
-Description of Project 1.
-
-Description of Project 2.
-
-Description of Project 3.
-
----
-
-## Blog
-
-Content of Post 1.
-
-Content of Post 2.
-
-Content of Post 3.
-
----
-
-## Contact Me
+# Contact us:
 
 You can reach out to me via email at [example@example.com](mailto:example@example.com).
 
