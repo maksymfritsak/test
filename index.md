@@ -1,4 +1,4 @@
-#About RAD:
+# About RAD:
 
 Rad is a tool developed by
 
@@ -8,7 +8,7 @@ Rad is a tool developed by
 
 - [Resampling](home.md)
 ---
-#How we handle CT, PET, and MR data:
+# How we handle CT, PET, and MR data:
  
 
 # Contact us:
