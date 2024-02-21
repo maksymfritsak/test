@@ -4,10 +4,10 @@ Rad is a tool developed by
 
 ---
 # RAD user manual:
-- [Get Started]
+- [Get Started](get_started.md)
 - [Resampling](resampling.md)
-- [Filtering]
-- [Radiomics]
+- [Filtering](filtering.md)
+- [Radiomics](radiomics.md)
 ---
 # Advanced: [RAD API](api.md)
 
