@@ -13,7 +13,7 @@ This user manual provides links to key sections for easy navigation and understa
 - [Get Started](get_started.md)
 - [Resampling](resampling.md)
 - [Filtering](filtering.md)
-- [Radiomics](radiomics.md) EXTRACTION
+- [Radiomics](radiomics.md)
 
 ---
 
