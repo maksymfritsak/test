@@ -27,6 +27,3 @@ Rad supports both .nii and .nii.gz data types.
 
 You can reach out to me via email at [example@example.com](mailto:example@example.com).
 
-# References:
----
-
