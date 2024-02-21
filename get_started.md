@@ -4,7 +4,7 @@ MS Windows, MacOS, and Linux.
 
 # Avaliable Data Types
 
-RAD is designed to support both DICOM and NiFTI:
+RAD is designed to support both DICOM and NiFTI as input file formats.
 
 ## DICOM: 
 
@@ -32,9 +32,9 @@ For all imaging formats assumed the any neened conversion was done already, thus
 
 # How to prepare your data:
 
-Put all your patient folders into one directroy. 
+Place all your patient folders into one directroy. 
 
-Paient folders should be named as integers (e.g. 1, 14, 325, etc.), without any specials symbols or letters. 
+Paient folders should be renamed as integers (e.g. 1, 14, 325, etc.), without any specials symbols or letters. 
 
 Each patient folder should consist only one patient.
 
@@ -43,3 +43,4 @@ Studied structures shold have the same name among all studied patients.
 z.B. If one studies radiomics extructed from prostate CTV for 150 patients, for each patient there should be present a structure called called sinilary e.g. 'prostate_CTV'. Wariations (e.g. PROSTATE_CTV, prostate_1, etc.) are not alowed and will be ommited.
 
 
+For Nifti: all image files should have the same name among all the studied patients. Zrad would crush otherwiese 
