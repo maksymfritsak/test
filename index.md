@@ -4,14 +4,16 @@ Rad is a tool developed by
 
 ---
 # RAD user manual:
+- [Get Started]
 - [Resampling](resampling.md)
-  
+- [Filtering]
+- [Radiomics]
 ---
-
 # Advanced: [RAD API](api.md)
 
 For advanced use, we suggest using RAD as a Python library that can be easily integrated into the research workflow.
-[Here](api.md) one can find examples of such use.
+[Here](api.md) one can find usefull examples.
+
 
 # How RAD handles CT, PET, and MR data:
 ## DICOM:
