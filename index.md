@@ -1,3 +1,5 @@
+RAD: THE SWISS ARMY KNIFE FOR RADIOMICS EXTRACTION
+---
 # About RAD
 
 RAD is a tool developed to enhance research workflows by providing advanced data processing capabilities, particularly in the field of medical imaging.
