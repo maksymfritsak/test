@@ -1,6 +1,6 @@
-# Supported platforms: 
-
-MS Windows, MacOS, and Linux.
+# Prerequirements: 
+Recommended python version: 3.11
+Supported platforms: MS Windows, MacOS, and Linux.
 
 # Avaliable Data Types
 
