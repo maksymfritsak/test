@@ -8,10 +8,10 @@ RAD is a tool developed to enhance research workflows by providing advanced data
 
 This user manual provides links to key sections for easy navigation and understanding of how to use RAD effectively:
 
-- [Get Started](get_started.md) - Introduction and setup instructions.
-- [Resampling](resampling.md) - Guide on how to resample images for analysis.
-- [Filtering](filtering.md) - Information on applying filters to your data.
-- [Radiomics](radiomics.md) - Detailed exploration of radiomic features extraction.
+- [Get Started](get_started.md)
+- [Resampling](resampling.md)
+- [Filtering](filtering.md)
+- [Radiomics](radiomics.md)
 
 ---
 
