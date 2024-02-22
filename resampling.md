@@ -6,7 +6,7 @@ theme: architect
 
 To perform resampling with RAD, navigate to the respective tab by clicking on 'Resampling' at the top-left corner of the menu.
 
-![Alt text](f1.png")
+![Description of Image](f1.png "Optional Title Here")
 
 Fill in the load directory (where the patient folders are located).
 
