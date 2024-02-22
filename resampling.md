@@ -6,12 +6,15 @@ theme: architect
 
 To perform resampling with RAD, navigate to the respective tab by clicking on 'Resampling' at the top-left corner of the menu.
 
-![Description of Image](f1.png "Optional Title Here")
+<p align="center">
+  <img src="f1.png" alt="Example Data Preparation" title="Data Preparation Example"/>
+</p>
 
 Fill in the load directory (where the patient folders are located).
 
-![Description of Image](f2.png "Title")
-
+<p align="center">
+  <img src="f2.png" alt="Example Data Preparation" title="Data Preparation Example"/>
+</p>
 
 Then choose the image modality. Input start and stop folders to run all folders within the defined range, or define a list of patients instead. Define the number of threads to run resampling for multiple patients in parallel.
 
