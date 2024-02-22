@@ -10,6 +10,9 @@ To perform resampling with RAD, navigate to the respective tab by clicking on 'R
 
 Fill in the load directory (where the patient folders are located).
 
+![Description of Image](f2.png "Title")
+
+
 Then choose the image modality. Input start and stop folders to run all folders within the defined range, or define a list of patients instead. Define the number of threads to run resampling for multiple patients in parallel.
 
 Define the save directory. Inside this directory, RAD will create folders with the original patient folder names where the resampled image and mask will be saved.
