@@ -10,20 +10,20 @@ To perform resampling with RAD, navigate to the respective tab by clicking on 'R
   <img src="f1.png" alt="Example Data Preparation" title="Data Preparation Example"/>
 </p>
 
-Specify the load directory (the directory with patient folders).
+Specify the load directory (the directory with patient folders). One can ither click on 'Load Directory' and navigate to the nedded dir. or just copy the directory into the dedecated field.
 
 <p align="center">
   <img src="f2.png" alt="Example Data Preparation" title="Data Preparation Example"/>
 </p>
 
-Then choose the image modality (supported PET, CT, and MR, on how Rad process each modality refer to the GetStarted).
+Then choose the image modality (supported PET, CT, and MR, on how Rad processes each modality refer to the GetStarted).
 One has three different possibilities how to specify patient folders:
 
-1) Input start and stop folders to run all folders within the defined range and keep the list of patient folders blank (Note, all folder names should be ONLY integers);
+1) Input start and stop folders to run all folders within the defined range and keep the list of patient folders blank (ALL patient folder names in a corresponding directory should be ONLY integers);
 
-2) Define a list of patient folders, while not specifying start and stop folders.
+2) Define a list of patient folders, while not specifying start and stop folders. (Folders can contain symbols and letters);
 
-3) Leave start, stop and list of folders blank, in this case, Rad will go through all folders in the provided directory (Note, folders can contain symbols and letters)
+3) Leave start, stop and list of folders blank, in this case, Rad will go through all folders in the provided directory (Folders can contain symbols and letters).
 
 Choose the number of threads to run Rad for multiple patients in parallel. But take in mind the RAM limits of your machine!
 
