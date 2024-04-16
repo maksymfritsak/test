@@ -1,47 +1,40 @@
-# Prerequirements: 
-* Recommended Python version: 3.11;
+# Prerequisites
+Ensure the following before starting:
+* **Recommended Python Version:** 3.11
+* **Supported Platforms:** Windows, MacOS, Linux
 
-* Supported platforms: Windows, MacOS, and Linux.
+# Available Data Types
+RAD supports both DICOM and NIfTI input file formats, facilitating diverse medical imaging workflows.
 
-# Avaliable Data Types
+## DICOM
+Each patient's folder should contain exactly one DICOM series and one RT structure file.
 
-RAD is designed to support both DICOM and NIfTI input file formats.
+### CT
+RAD reads CT images in Hounsfield Units directly, without performing intensity conversion.
 
-## DICOM: 
+### PT
+For PET scans, RAD calculates the SUV_bw (Standardized Uptake Value, body weight) and processes the SUV data array for further operations.
 
-Each patient folder should contain only one DICOM series and one RT struct file.
+### MR
+MR images are processed as raw 3D arrays, with no data conversion applied.
 
-### CT:
+## NIfTI
+RAD handles both `.nii` and `.nii.gz` file formats efficiently.
 
-Rad reads the image in Hounsfield Units, without intensity conversion. 
+### CT, MR, PT
+It is assumed that all necessary data conversions are pre-handled; RAD will only read the raw 3D data arrays.
 
-### PT: 
+# Preparing Your Data
+## Organizing Patient Data
+* Organize all patient folders into a single directory.
+* RECOMENDED: Rename patient folders using integers (e.g., 1, 14, 325) for simplicity. Avoid special symbols or letters, and the sequence of numbers need not be consecutive.
+* Each folder should represent a single patient only.
 
-Rad calculates the SUV_bw and performs any further operations on the SUV array.
+## Standardizing Structure Names
+* Ensure consistency in naming the studied structures across all patients. For example, if studying the left lung, name it `lung_left` consistently in every patient folder. Variations such as `Lung_left` or `LUNG_left` will be treated as distinct structures.
+* For a study involving radiomics extracted from the prostate CTV across 150 patients, each should have a similarly named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different regions of interest (ROIs).
 
-### MR:
+## File Naming Conventions for NIfTI
+* Maintain uniformity in file naming across all studied patients to streamline processing.
 
-Reads raw 3D arry without any conversion.
-
-## NIFTI
-
-RAD supports both `.nii` and `.nii.gz` data formats.
-
-### CT, MR, PT:
-
-For all imaging formats assumed that any needed conversion was done already, thus read only the raw 3D array.
-
-# How to prepare your data:
-
-Place all your patient folders into ONE directory (aka folder). 
-
-For the ease of using Rad, paient folders should be renamed as integers (e.g. 1, 14, 325, etc.), without any specials symbols or letters (but numbers should not strictly follow each other.). 
-
-Each patient folder should consist ONLY ONE patient.
-
-Studied structures shold have the same name among all studied patients (If you study left lung, then in every patient left lung structure should have the same name e.g. lung_left. For Rad structures lung_left, Lung_left, or LUNG_left are three different structures). 
-
-If one studies radiomics extructed from prostate CTV for 150 patients, for each patient there should be present a structure called similary e.g. 'prostate_CTV'. Variations (e.g. PROSTATE_CTV, prostate_1, etc.) are not alowed as assumed to represent different ROIs.
-
-
-For NIfTI: All image files should have the same name among all the studied patients. 
+By following these guidelines, you can optimize the configuration for RAD and ensure efficient processing of your medical imaging data.
