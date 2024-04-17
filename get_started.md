@@ -13,7 +13,7 @@ Rad supports only files with DICOM Modality tag (0008, 0060) equals CT, PT, MR, 
 
 * **MR**: RAD reads raw 3D image from the DICOM array without any preprocessing.
 
-## NIfTI
+## NIfTI:
 RAD handles both `.nii` and `.nii.gz` file formats.
 
 * **CT, MR, PT**: All necessary data conversions are assumed to be pre-handled (CT is already converted to HU and PET is already converted to SUV); RAD will only read the raw 3D image.
