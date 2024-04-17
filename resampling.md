@@ -13,13 +13,13 @@ To perform resampling with RAD, click on the `Resampling` tab located in the men
 
 ## Setting Up Directories
 
-Specify the **load directory** (the directory containing patient folders) by either:
+Specify the **load directory** (the directory that contains patient folders) by either:
 - Clicking on `Load Directory` and navigating to the folder.
-- Copying the directory path into the field to the right of the 'Load Directory' button.
+- Copying the directory path into the blank field to the right of the `Load Directory` button.
 
 Use the same approaches to choose the **save directory** (the directory where resampled images and masks will be saved). 
-Each patient will be saved in a subfolder named after the original folder.
-RAD will automatically create the provided directory if it does not exist.
+Inside the save directory, each patient will be saved in a subfolder named after the original folder.
+RAD will automatically create the provided save directory if it does not exist.
 
 ### Imaging Modality
 Select the imaging modality (supported options: PET, CT, and MR). For details on how RAD processes each modality, refer to the [Get Started](get_started.md) guide.
@@ -27,8 +27,11 @@ Select the imaging modality (supported options: PET, CT, and MR). For details on
 ## Select Patient Folders
 Options to specify patient folders include:
 1. Input `start` and `stop` folders to run all folders within the specified range, keeping the `patient folder list` blank (Note: **ALL** folder names in the load directory should be integers).
-2. Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
-3. Leave the `patient folder list`, `start`, and `stop` folders blank; RAD will process all folders in the provided load directory. (Note: folders can include symbols and letters).
+
+   **Exaple** In my load directory I have six patient folders. These folders are named 1, 2, 5, 13, 20, 21. I want to resample only folders 5, 13, and 20. Thus I specify the `start` and `stop` folders accordingly: 
+     
+3. Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
+4. Leave the `patient folder list`, `start`, and `stop` folders blank; RAD will process all folders in the provided load directory. (Note: folders can include symbols and letters).
 
 ## Processing
 - Select the number of threads for parallel processing. Rad calculates one patient at one thread at a time. Keep in mind the RAM limits of your machine.
