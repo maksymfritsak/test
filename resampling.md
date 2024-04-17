@@ -61,7 +61,7 @@ Options to specify patient folders include:
      **Important**: If one or more selected structures do not exist, Rad will skip them.
   
 - Type `ExtractAllMasks` to use all masks from the RTstruct file:
-  ![DICOM Option I](f3_DICOM_1.PNG "DICOM Option I")
+  ![DICOM Option I](f3_DICOM_2.PNG "DICOM Option II")
 - Leave `Studied str.` blank if you want only to resample the image without any masks.
 - Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be saved as separate NIfTI files).
 
