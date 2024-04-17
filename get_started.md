@@ -17,23 +17,22 @@ RAD assumes that CT is already provided in Hounsfiled Units.
 RAD calculates the SUV with the body weight strategy. For this DICOM tags () should be present.
 
 ### MR
-RAD reads raw 3D array from the DICOM.
+RAD reads raw 3D image from the DICOM without any preprocessing.
 
 ## NIfTI
-RAD handles both `.nii` and `.nii.gz` file formats efficiently.
+RAD handles both `.nii` and `.nii.gz` file formats.
 
 ### CT, MR, PT
-All necessary data conversions are assumed to be pre-handled (CT is already converted to HU and PET is already converted to SUV); RAD will only read the raw 3D data arrays.
+All necessary data conversions are assumed to be pre-handled (CT is already converted to HU and PET is already converted to SUV); RAD will only read the raw 3D image.
 
 # Preparing Your Data
 ## Organizing Patient Data
-* Organize all patient folders into a single directory. 
+* Organize all patient folders into a single directory (aka Load Directory). 
 * RECOMENDED: Rename patient folders using integers (e.g., 1, 14, 325) for simplicity. Avoid special symbols or letters.
 * Each folder should represent a single patient with a single image inside.
 
 ## Standardizing Structure Names
-* Ensure consistency in naming the studied structures across all patients. For example, if studying the left lung, name it `lung_left` consistently in every patient folder. Variations such as `Lung_left` or `LUNG_left` will be treated as distinct structures.
-* For a study involving radiomics extracted from the prostate CTV across 150 patients, each should have a similarly named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different regions of interest (ROIs).
+* Ensure consistency in naming the studied structures across all patients. For example, in a study of the prostate CTV across 150 patients, each patient should have an identically named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different ROIs.
 
 ## File Naming Conventions for NIfTI
-* Maintain the same file name for the patient image e.g. 'image.nii.gz'. Image file mane should be identical among the studied patients.
+* Maintain the same file name for the patient's image e.g. 'image.nii.gz'. The image file name should be identical among the studied patients.
