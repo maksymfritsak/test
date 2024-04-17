@@ -13,16 +13,17 @@ theme: architect
                  start_folder=None, stop_folder=None, list_of_patient_folders=None,
                  nifti_image=None,number_of_threads=1)
 
-* **load_dir** (str): Path to the directory containing patient folders.
-* **save_dir** (str): Destination directory for saved data. RAD will create it if it does not exist;
-* **input_data_type** (str) {'DICOM', 'NIFTI'}: Supported medical data types are DICOM and NIfTI. See the [Get Started](get_started.md) guide for more details;
-* **input_imaging_mod** (str) {'CT', 'PT', 'MR'}: Modalities should be consistent across patients. See the [Get Started](get_started.md) guide for more details;
-* **structure_set** (list[str] or None): Optional list of structure names to resample. Default value is None. OPTIONAL: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
-* **just_save_as_nifti** (bool): If set to True and the input data type is DICOM, saves the image and selected structures as NIFTI files without resampling. Default is False;
-* **resample_resolution** (float): Target resolution for image resampling in mm. Default is 1.0;
-* **resample_dimension** (str) {'3D', '2D'}: '3D' for isotropic resampling or '2D' for in-plane resampling with original z-spacing. Default is '3D';
-*image_interpolation_method and mask_interpolation_method (str): Interpolation methods include 'NN', 'Linear', 'BSpline', 'Gaussian'. Default is 'Linear'.
-*mask_interpolation_threshold (float): Threshold for mask interpolation, range [0, 1].
+* **load_dir (str)**: Path to the directory containing patient folders;
+* **save_dir (str)**: Destination directory for saved data. RAD will create it if it does not exist;
+* **input_data_type (str) {'DICOM', 'NIFTI'}**: Supported medical data types are DICOM and NIfTI. See the [Get Started](get_started.md) guide for more details;
+* **input_imaging_mod (str) {'CT', 'PT', 'MR'}**: Modalities should be consistent across patients. See the [Get Started](get_started.md) guide for more details;
+* **structure_set (list[str] or None), default=None**: Optional list of structure names to resample. OPTIONAL: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+* **just_save_as_nifti (bool), default=False**: If set to True and the input data type is DICOM, saves the image and selected structures as NIFTI files without resampling;
+* **resample_resolution (float), default=1.0**: Target resolution for image resampling in mm.
+* **resample_dimension (str), {'3D', '2D'}, default='3D'**: '3D' for isotropic resampling or '2D' for in-plane resampling with original z-spacing.
+* **image_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
+* **mask_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
+* **mask_interpolation_threshold (float), default=0.5**: Threshold for mask interpolation in the range [0, 1].
 *start_folder, stop_folder (int or None): Define a range of folders to process. Folder names must be integers.
 *list_of_patient_folders (list[str] or None): Specify folders to process, allowing any symbols or letters in names.
 *nifti_image (str or None): Specify the NIFTI image file name for 'NIFTI' data type. Include the file extension.
