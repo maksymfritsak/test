@@ -16,6 +16,6 @@ pip install ...
 
 ## RAD API User Guide
 
-* [Resampling](api_prep.md);
-* [Filtering](api_filt.md);
-* [Radiomics](api_rad.md).
+* [Resampling](api_prep.md)
+* [Filtering](api_filt.md)
+* [Radiomics](api_rad.md)
