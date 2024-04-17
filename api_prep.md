@@ -46,7 +46,7 @@ theme: architect
 
 ## Methods:
 
-* **resample()**: performs resampling based on provided information and saves resampled data to the `load_dir`.
+* **resample()**: performs resampling based on provided information and saves resampled data to the `save_dir`.
 
 
 ## Examples:
