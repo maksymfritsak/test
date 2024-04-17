@@ -9,7 +9,7 @@ Rad supports only files with DICOM Modality tag (0008, 0060) equals CT, PT, MR, 
 
 * **CT**: RAD assumes that CT is already provided in Hounsfiled Units.
 
-* **PT**: RAD calculates the SUV with the body weight strategy. For this the following DICOM tags should be present: Radiopharmaceutical Start Time (0018,1072), Decay Correction (0054,1102), Decay Factor (0054,1321), Radionuclide Half Life (0018,1075), Series Time (0008,0031), and Patient's Weight (0010,1030).
+* **PT**: RAD calculates the SUV with the body weight strategy. For this the following DICOM tags should be present: Radiopharmaceutical Start Time (0018,1072), Decay Correction (0054,1102), Radionuclide Half Life (0018,1075), Series Time (0008,0031), and Patient's Weight (0010,1030).
 
 * **MR**: RAD reads raw 3D image from the DICOM array without any preprocessing.
 
