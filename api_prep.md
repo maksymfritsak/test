@@ -27,10 +27,14 @@ theme: architect
 * **image_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
 * **mask_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
 * **mask_interpolation_threshold (float), default=0.5**: Threshold for mask interpolation in the range [0, 1].
-*start_folder, stop_folder (int or None): Define a range of folders to process. Folder names must be integers.
-*list_of_patient_folders (list[str] or None): Specify folders to process, allowing any symbols or letters in names.
-*nifti_image (str or None): Specify the NIFTI image file name for 'NIFTI' data type. Include the file extension.
-*number_of_threads (int): Number of threads for parallel processing. Consider machine's RAM limits.
+* **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process. All folder names inside the `load_dir` must be integers.
+* **list_of_patient_folders (list[str] or None), default=None**: Specify folders to process, allowing any symbols or letters in folder names.
+
+   NOTE 1: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are None then rad will take all folders from the `load_dir`.
+   NOTE 2: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are not None then rad will take all folders from in the `list_of_patient_folders`.
+
+* **nifti_image (str or None), default=None**: If data type is NIFTI, specify the NIFTI image, including the file extension.
+* **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
 
 
 
