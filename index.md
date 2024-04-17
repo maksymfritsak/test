@@ -4,8 +4,6 @@ RAD: THE SWISS ARMY KNIFE FOR RADIOMICS
 
 RAD is an open-source user-friendly "out of the box" tool for radiomics calculation from the medical data, oriented on both zero-programming and programming-fluent users, developed at the Radiation Oncology Department of the University Hospital Zurich.
 
----
-
 ## RAD User Manual
 
 - [Get Started](get_started.md)
