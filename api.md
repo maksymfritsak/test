@@ -30,9 +30,32 @@ rad.extract_radiomics()
                  start_folder=None, stop_folder=None, list_of_patient_folders=None,
                  nifti_image=None,number_of_threads=1)
 
-| Parameters |Center Align |
-|:-----------|:------------|
-| load_dir   |dtype: str   |
+1) load_dir
+   dtype: str
+   
+
+   Path to the load directory where patient folders are located.
+
+2) save_dir
+
+   dtype: str
+
+   Path to the directory where data will be saved. If the directory does not exist, rad will create it.
+
+3) input_data_type: {'DICOM', 'NIFTI'}
+
+   dtype: str
+
+   Rad supports both Dicom and NIfTI standards, consult GetStarted for the further details on how both data types are handled.
+
+4) input_imaging_mod: {'CT', 'PT', 'MR'}
+
+   dtype: str
+
+   The modality of your images, modalities should be the same among all you patients. How rad handles modalities read at the Get started.
+
+5) structure_set: {None, [''], ['ExtractAllMasks']}
+   dtype: None or list of strs
 
 
 ```
