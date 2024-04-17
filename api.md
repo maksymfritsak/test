@@ -30,6 +30,11 @@ rad.extract_radiomics()
                  start_folder=None, stop_folder=None, list_of_patient_folders=None,
                  nifti_image=None,number_of_threads=1)
 
+| Parameters |Center Align |
+|:-----------|:------------|
+| load_dir   |dtype: str   |
+
+
 ```
 This is some text in a box!
 ```
