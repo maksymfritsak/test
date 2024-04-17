@@ -36,17 +36,22 @@ Options to specify patient folders include:
 ## Configuring Resampling Options
 
 ### Image Data Type
-- **For DICOM**: Specify the studied structures list by typing your ROIs separated by commas. Use `ExtractAllMasks` to use all masks in the RTstruct file. Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox.
+- **For DICOM**: Specify the studied structures list by typing your ROIs separated by commas.
+
+  Use `ExtractAllMasks` to use all masks in the RTstruct file.
+
+  Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox.
+
 - **For NIFTI**: Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
 
 ### Image and Masks Resampling
 - Define the resample resolution (in mm) - a resolution to which the image and masks will be resampled;
-- Choose an image interpolation method (popular options include Linear and BSpline);
-- Choose a mask interpolation method (popular options are Nearest Neighbors (NN) and Linear with a default threshold of 0.5).
-- Choose resample dimension: 3D isotropic resampling or 2D anisotropic resampling (in-plane resampling, while keeping the original spacing in the z-direction).
+- Choose an image interpolation method (the most popular options include Linear and BSpline);
+- Choose a mask interpolation method (the most popular options are Nearest Neighbors (NN) and Linear with a default threshold of 0.5).
+- Choose resample dimension: 3D isotropic or 2D anisotropic (in-plane resampling, while keeping the original spacing in the z-direction).
 
 ## Optional Steps
 - **Save Input**: Save your configuration by going to the `File ` menu and clicking `Save Input`, or using the shortcut 'Ctrl+S'.
 - **Load Input**: Load a previously saved configuration by navigating to the `File` menu and selecting `Load Input` or pressing 'Ctrl+O'.
 ## Run the Configuration
-When all fields are filled, click the `RUN` button and monitor the resampling progress in the console.
+When all fields are filled, click the `Run` button and monitor the resampling progress in the console.
