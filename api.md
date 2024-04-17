@@ -11,7 +11,7 @@ pip install ...
 ```
 This approach is dedicated to users who are fluent in programming with Python and provides a great opportunity to integrate RAD into the research workflow without the necessity of interaction with the User Interface.
 
-* Preprocessing;
+* [Resampling](api_prep.md);
 * Filtering;
 * Radiomics.
 
