@@ -33,8 +33,6 @@ Options to specify patient folders include:
 ## Processing
 - Select the number of threads for parallel processing. Rad calculates one patient at one thread at a time. Keep in mind the RAM limits of your machine.
 
-![Data Preparation Example](f2.png "Example Data Preparation")
-
 ## Configuring Resampling Options
 
 ### Image Data Type
