@@ -51,7 +51,8 @@ theme: architect
 
 ## Examples:
 
-In this example we perform resampling on the phantom studied in IBSI I Configuration B (according to the IBSI report)
+### IBSI I Config. B (NIFTI):
+In this example, we perform resampling on the NIFTI phantom studied in IBSI I Configuration B.
 
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI',
@@ -66,6 +67,67 @@ prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI',
                      mask_interpolation_method='Linear',
                      mask_interpolation_threshold=0.5,
                      list_of_patient_folders=['1'],
+                     nifti_image='phantom.nii.gz',
+                     number_of_threads=1)
+prep.resample()
+```
+
+### IBSI I Config. B (DICOM):
+In this example, we perform resampling on the DICOM phantom studied in IBSI I Configuration B.
+
+```python
+prep = Preprocessing(load_dir='Test_Cases/IBSI I/DICOM', 
+                     save_dir='Test_Cases/IBSI I/Save/B_DICOM',
+                     input_data_type='DICOM', 
+                     input_imaging_mod='CT', 
+                     structure_set=['GTV-1'], 
+                     just_save_as_nifti=False, 
+                     resample_resolution=2.0, 
+                     resample_dimension='2D',
+                     image_interpolation_method='Linear',
+                     mask_interpolation_method='Linear',
+                     mask_interpolation_threshold=0.5,
+                     list_of_patient_folders=['1'],
+                     number_of_threads=1)
+prep.resample()
+```
+
+### IBSI I Config. C and Config. D (DICOM):
+In this example, we perform resampling on the DICOM phantom studied in IBSI I. Resampling for Configurations C and D are identical.
+
+```python
+prep = Preprocessing(load_dir='Test_Cases/IBSI I/DICOM', 
+                     save_dir='Test_Cases/IBSI I/Save/C_D_DICOM',
+                     input_data_type='DICOM', 
+                     input_imaging_mod='CT',
+                     structure_set=['GTV-1'], 
+                     just_save_as_nifti=False, 
+                     resample_resolution=2.0, 
+                     resample_dimension='3D',
+                     image_interpolation_method='Linear', 
+                     mask_interpolation_method='Linear', 
+                     mask_interpolation_threshold=0.5, 
+                     list_of_patient_folders=['1'],  
+                     number_of_threads=1)
+prep.resample()
+```
+
+### IBSI I Config. E (NIFTI):
+In this example, we perform resampling on the NIFTI phantom studied in IBSI I Configuration E.
+
+```python
+prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI', 
+                     save_dir='Test_Cases/IBSI I/Save/E_NIFTI',
+                     input_data_type='NIFTI', 
+                     input_imaging_mod='CT',  
+                     structure_set=['mask'], 
+                     just_save_as_nifti=False,
+                     resample_resolution=2.0, 
+                     resample_dimension='3D',
+                     image_interpolation_method='BSpline', 
+                     mask_interpolation_method='Linear',
+                     mask_interpolation_threshold=0.5, 
+                     list_of_patient_folders=['1'], 
                      nifti_image='phantom.nii.gz',
                      number_of_threads=1)
 prep.resample()
