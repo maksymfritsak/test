@@ -21,7 +21,7 @@ theme: architect
 
   **Example**: `structure_set=['lung', 'liver', 'CTV']`;
 
-  **OPTIONAL**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+  **Optional**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
   
 * **just_save_as_nifti (bool), default=False**: If set to True and the input data type is DICOM, saves the image and selected structures as NIFTI files, while omitting resampling;
 * **resample_resolution (float), default=1.0**: Target resolution for the resampled image in mm.
@@ -29,7 +29,10 @@ theme: architect
 * **image_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
 * **mask_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
 * **mask_interpolation_threshold (float), default=0.5**: Threshold for mask interpolation in the range [0, 1];
-* **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process. All folder names inside the `load_dir` must be integers;
+* **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
+
+  **Important**: ALL folder names inside the `load_dir` must be integers;
+
 * **list_of_patient_folders (list[str] or None), default=None**: Specify folders to process, allowing any symbols or letters in folder names;
 
    **NOTE 1**: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are None then rad will take all folders from the `load_dir`;
