@@ -32,7 +32,7 @@ theme: architect
 * **number_of_bins (int or None), default=None**
 * **bin_size (float, int, or None), default=None**
 
-  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None - not supported.
+  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None is not supported.
 
 * **slice_weighting (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, for texture features performed weighting proportional to the number of voxels in ROI in the slice.
 * **slice_median (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, instead of averaging performed median selection.
