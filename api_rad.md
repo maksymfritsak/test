@@ -32,7 +32,12 @@ theme: architect
 * **number_of_bins (int or None), default=None**
 * **bin_size (float, int, or None), default=None**
 
-  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None - not supported.  
+  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None - not supported.
+
+* **slice_weighting (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, for texture features performed weighting proportional to the number of voxels in ROI in the slice.
+* **slice_median (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, instead of averaging performed median selection.
+
+  **Note**: Configuration where both `slice_weighting` and `slice_median` are True is not supported!
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
 
@@ -49,15 +54,6 @@ theme: architect
   **Example**: `nifti_image='image.nii.gz`;
 
 * **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
-
-16) slice_weighting
-    Data Type: bool
-    Default: False
-
-17) slice_median
-    Data Type: bool
-    Default: False
-
 
 ## Methods:
 
