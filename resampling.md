@@ -30,6 +30,7 @@ Options to specify patient folders include:
 - Input `start` and `stop` folders to run all folders within the specified range, keeping the `patient folder list` blank (Note: **ALL** folder names in the load directory should be integers).                                                                                                                                                                        
 
     **Exaple**: In my load directory I have six patient folders. These folders are named 1, 2, 5, 13, 20, 21. I want to resample only folders 5, 13, and 20. Thus I specify the `start` and `stop` folders accordingly:
+  
     ![Select Patient Folders Option I](f2_load_pat_folders_1.PNG "Option I")
 
     **Important**: Boundary folders (in the example above 5 and 20) should always exist!
@@ -37,6 +38,7 @@ Options to specify patient folders include:
 - Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
 
      **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to resample only folders pat_1, pat_2, and pat_5. Thus I specify the `start` and `stop` folders accordingly:
+  
      ![Select Patient Folders Option II](f2_load_pat_folders_2.PNG "Option II")
    
      **Important**: Selected folders should always exist!
@@ -53,6 +55,7 @@ Options to specify patient folders include:
 - Specify the studied structures list by typing your ROIs separated by commas.
 
      **Example**: In my RTstruct file I have liver, lung, CTV, PTV, and GTV. I am interested only in liver, lung, CTV, and PTV structures. Thus, I write:
+  
      ![DICOM Option I](f3_DICOM_1.PNG "DICOM Option I")
 
      **Important**: If one or more selected structures do not exist, Rad will skip them.
