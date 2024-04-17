@@ -21,6 +21,8 @@ theme: architect
   **Example**: `structure_set=['lung', 'liver', 'CTV']`;
 
   **Optional**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+
+* 
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
 
