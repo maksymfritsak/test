@@ -41,7 +41,7 @@ theme: architect
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
 
-  **Important**: ALL folder names inside the `load_dir` must be integers;
+  **Important**: If both `start_folder` and `stop_folder` are non-None, than **ALL** folder names inside the `load_dir` must be integers;
 
 * **list_of_patient_folders (list[str] or None), default=None**: Specify folders to process, allowing any symbols or letters in folder names;
 
