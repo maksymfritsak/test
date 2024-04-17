@@ -31,31 +31,78 @@ rad.extract_radiomics()
                  nifti_image=None,number_of_threads=1)
 
 1) load_dir
+
    dtype: str
    
 
    Path to the load directory where patient folders are located.
 
-2) save_dir
+3) save_dir
 
    dtype: str
 
    Path to the directory where data will be saved. If the directory does not exist, rad will create it.
 
-3) input_data_type: {'DICOM', 'NIFTI'}
+4) input_data_type: {'DICOM', 'NIFTI'}
 
    dtype: str
 
    Rad supports both Dicom and NIfTI standards, consult GetStarted for the further details on how both data types are handled.
 
-4) input_imaging_mod: {'CT', 'PT', 'MR'}
+5) input_imaging_mod: {'CT', 'PT', 'MR'}
 
    dtype: str
 
    The modality of your images, modalities should be the same among all you patients. How rad handles modalities read at the Get started.
 
-5) structure_set: {None, [''], ['ExtractAllMasks']}
-   dtype: None or list of strs
+7) structure_set: {None, ['ExtractAllMasks']}
+
+   Data Type: Either `None` or a list containing elements of type `str`.
+
+   Default: None
+
+  This parameter takes a list of structure names one wants to resample, for example ['lung', 'liver', 'CTV_1'].
+
+  There are some conventional values for this parameter:
+
+  None - no structures are taken into account and only the image is resampled;
+
+  ['ExtractAllMasks'] - only for DICOM, takes all structures in the RTstruct file.
+
+8) just_save_as_nifti: {True, False}
+
+   Data Type: bool
+
+   Default: Flase
+
+   Only for DICOM, if True saves the image and specified structures as NIfTI files without resampling.
+
+9) resample_resolution
+
+   Data Type: float
+
+   Default: 1.0
+
+   Resolution to which image will be resampled (in mm).
+
+10) resample_dimension: {'2D', '3D'}
+
+    Data Type: str
+
+    Default: '3D'
+
+    '3D': the image is resampled isotropicaly.
+    '2D': image is resampled inplane while original spacing is jeeped in the z-direction.
+    
+
+   
+
+  
+
+  
+
+  
+   
 
 
 ```
