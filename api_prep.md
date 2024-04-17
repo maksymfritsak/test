@@ -17,9 +17,12 @@ theme: architect
 * **save_dir (str)**: Destination directory for saved data. RAD will create it if it does not exist;
 * **input_data_type (str) {'DICOM', 'NIFTI'}**: Supported medical data types are DICOM and NIfTI. See the [Get Started](get_started.md) guide for more details;
 * **input_imaging_mod (str) {'CT', 'PT', 'MR'}**: Modalities should be consistent across patients. See the [Get Started](get_started.md) guide for more details;
-* **structure_set (list[str] or None), default=None**: Optional list of structure names to resample. OPTIONAL: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
-* **just_save_as_nifti (bool), default=False**: If set to True and the input data type is DICOM, saves the image and selected structures as NIFTI files without resampling;
-* **resample_resolution (float), default=1.0**: Target resolution for image resampling in mm.
+* **structure_set (list[str] or None), default=None**: List of structure names to resample.
+
+  OPTIONAL: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+  
+* **just_save_as_nifti (bool), default=False**: If set to True and the input data type is DICOM, saves the image and selected structures as NIFTI files omitting resampling;
+* **resample_resolution (float), default=1.0**: Target resolution for the resampled image in mm.
 * **resample_dimension (str), {'3D', '2D'}, default='3D'**: '3D' for isotropic resampling or '2D' for in-plane resampling with original z-spacing.
 * **image_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
 * **mask_interpolation_method (str), {'NN', 'Linear', 'BSpline', 'Gaussian'}, default='Linear'**
