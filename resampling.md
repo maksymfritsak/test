@@ -28,7 +28,7 @@ Select the imaging modality (supported options: PET, CT, and MR). For details on
 Options to specify patient folders include:
 1. Input `start` and `stop` folders to run all folders within the specified range, keeping the `patient folder list` blank (Note: **ALL** folder names in the load directory should be integers).
 2. Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
-3. Leave the `patient folder list`, `start`, and `stop` folders blank; RAD will then process all folders in the 'Load Directory'. (Note: folders can include symbols and letters).
+3. Leave the `patient folder list`, `start`, and `stop` folders blank; RAD will process all folders in the provided load directory. (Note: folders can include symbols and letters).
 
 ## Processing
 - Select the number of threads for parallel processing. Rad calculates one patient at one thread at a time. Keep in mind the RAM limits of your machine.
