@@ -51,7 +51,7 @@ theme: architect
 
 * **nifti_image (str or None), default=None**: If the data type is NIFTI, specify the name of the NIFTI image file, including the extension.
   
-  **Example**: `nifti_image='image.nii.gz`;
+  **Example**: `nifti_image='image.nii.gz'`;
 
 * **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
 
