@@ -48,7 +48,7 @@ Options to specify patient folders include:
 - Choose resample dimension: 3D isotropic resampling or 2D anisotropic resampling (in-plane resampling, while keeping the original spacing in the z-direction).
 
 ## Optional Steps
-- **Save Input**: Save your configuration by going to the menu and clicking 'Save Input', or using the shortcut 'Ctrl+S'.
-- **Load Input**: Load a previously saved configuration by selecting 'Load Input' or pressing 'Ctrl+O'.
+- **Save Input**: Save your configuration by going to the `File ` menu and clicking `Save Input`, or using the shortcut 'Ctrl+S'.
+- **Load Input**: Load a previously saved configuration by navigating to the `File` menu and selecting `Load Input` or pressing 'Ctrl+O'.
 ## Run the Configuration
 When all fields are filled, click the `RUN` button and monitor the resampling progress in the console.
