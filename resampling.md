@@ -51,8 +51,11 @@ Options to specify patient folders include:
 ### Image Data Type
 #### DICOM:
 - Specify the studied structures list by typing your ROIs separated by commas.
+
      **Example**: In my RTstruct file I have liver, lung, CTV, PTV, and GTV. I am interested only in liver, lung, CTV, and PTV structures. Thus, I write:
-     ![DICOM Option I](f3 "Option II")
+     ![DICOM Option I](f3_DICOM_1.PNG "DICOM Option I")
+
+     **Important**: If one or more selected structures do not exist, Rad will skip them.
 - Type `ExtractAllMasks` to use all masks from the RTstruct file.
 - Leave `Studied str.` blank if you want only to resample the image without any masks.
 - Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be saved as separate NIfTI files).
