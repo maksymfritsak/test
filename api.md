@@ -25,4 +25,7 @@ rad.extract_radiomics()
 
 > This is some text in a box!
 
+```
+This is some text in a box!
+```
 
