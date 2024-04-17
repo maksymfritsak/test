@@ -6,7 +6,7 @@ RAD is an open-source user-friendly "out of the box" tool for radiomics calculat
 
 ---
 
-# RAD User Manual
+## RAD User Manual
 
 - [Get Started](get_started.md)
 - [Resampling](resampling.md)
@@ -15,10 +15,10 @@ RAD is an open-source user-friendly "out of the box" tool for radiomics calculat
 
 ---
 
-# Advanced: RAD API
+## Advanced: RAD API
 
 For advanced usage, we recommend utilizing RAD as a Python library, which can be seamlessly integrated into your research workflow. The [RAD API documentation](api.md) includes useful guides and examples to get you started.
 
-# Contact Us
+## Contact Us
 
 Should you have any questions, feel free to reach out via email at [example@example.com](mailto:example@example.com).
