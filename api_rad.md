@@ -23,12 +23,16 @@ theme: architect
   **Optional**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
 
 * **aggr_dim (str) {'2D', '2.5D', '3D'}, default='3D'**
-
 * **aggr_method (str) {'MERG', 'AVER', 'SLICE_MERG', 'DIR_MERG'}, default='AVER'**
-
 * **intensity_range (list[float], list[int] or None), default=None**: If not None then voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
 
   **Example**: `intensity_range = [-1000, 500]`.
+
+* **outlier_range (float, int, or None), default=None**: If not None, the voxels that are outside the x sigma are excluded from the intensity mask.
+* **number_of_bins (int or None), default=None**
+* **bin_size (float, int, or None), default=None**
+
+  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None - not supported.  
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
 
@@ -45,19 +49,6 @@ theme: architect
   **Example**: `nifti_image='image.nii.gz`;
 
 * **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
-    
-13) outlier_range
-
-    Data Type: float or None
-
-    If not None, the voxels that are outside the x sigma are excluded from the intensity mask.
-
-14) number_of_bins
-
-    Data Type: int or None
-
-15) bin_size
-    Data Type: float, int or None
 
 16) slice_weighting
     Data Type: bool
