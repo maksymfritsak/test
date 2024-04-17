@@ -20,12 +20,12 @@ RAD handles both `.nii` and `.nii.gz` file formats.
 
 # Preparing Your Data
 ## Organizing Patient Data:
-* Organize all patient folders into a single directory (aka Load Directory);
-* RECOMENDED: Rename patient folders using integers (e.g., 1, 14, 325) for simplicity. Avoid special symbols or letters;
+* Locate all patient folders into a single directory;
+* RECOMMENDED: Rename patient folders using integers (e.g., 1, 14, 325) for simplicity. Avoid special symbols or letters;
 * Each folder should represent a single patient with a single image inside.
 
 ## Standardizing Structure Names:
-* Ensure consistency in naming the studied structures across all patients. For example, in a study of the prostate CTV across 150 patients, each patient should have an identically named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different ROIs.
+* Ensure consistency in the naming of studied structures across all patients. For example, in a study of the prostate CTV across 150 patients, each patient should have an identically named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different ROIs.
 
 ## File Naming Conventions for NIfTI:
-* Maintain the same file name for the patient's image e.g. 'image.nii.gz'. The image file name should be identical among the studied patients.
+* Maintain the same file name for the patient's image (e.g. 'image.nii.gz'). The image file name should be identical among the studied patients.
