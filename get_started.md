@@ -1,7 +1,4 @@
-# Prerequisites
-Ensure the following before starting:
-* **Recommended Python Version:** 3.11
-* **Supported Platforms:** Windows, MacOS, Linux
+**Supported Platforms:** Windows, MacOS, Linux
 
 # Available Data Types
 RAD supports both DICOM and NIfTI input file formats, facilitating diverse medical imaging workflows.
