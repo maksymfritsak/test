@@ -13,11 +13,11 @@ To perform resampling with RAD, click on the `Resampling` tab located in the men
 
 ## Setting Up Directories
 
-Specify the `**load directory**` (the directory containing patient folders) by either:
-- Clicking on 'Load Directory' and navigating to the folder.
+Specify the **load directory** (the directory containing patient folders) by either:
+- Clicking on `Load Directory` and navigating to the folder.
 - Copying the directory path into the field to the right of the 'Load Directory' button.
 
-Use the same approaches to choose the `**save directory**` (the directory where resampled images and masks will be saved). 
+Use the same approaches to choose the **save directory** (the directory where resampled images and masks will be saved). 
 Each patient will be saved in a subfolder named after the original folder.
 RAD will automatically create the provided directory if it does not exist.
 
