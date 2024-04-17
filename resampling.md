@@ -65,9 +65,12 @@ Options to specify patient folders include:
 - Leave `Studied str.` blank if you want only to resample the image without any masks.
 - Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be saved as separate NIfTI files).
 
-- **For NIFTI**: Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
-      **Example**: If in all patient folders I have masks: liver.nii.gz, ctv.nii.gz, and ptv.nii.gz and image ct_scan.nii.gz and I want to resample only liver and ctv masks together with the image, I type the following:
-      ![NIFTI Option I](f3_NIFTI_1.PNG "NIFTI Option I")
+#### For NIFTI: 
+- Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
+
+     **Example**: If in all patient folders I have masks: liver.nii.gz, ctv.nii.gz, and ptv.nii.gz and image ct_scan.nii.gz and I want to resample only liver and ctv masks together with the image, I type the following:
+
+     ![NIFTI Option I](f3_NIFTI_1.PNG "NIFTI Option I")
  
 
 ### Image and Masks Resampling
