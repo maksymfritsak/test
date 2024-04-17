@@ -1,3 +1,8 @@
+---
+layout: default
+theme: architect
+---
+
 # Prerequisites
 To install the most recent version of rad:
 
@@ -6,22 +11,6 @@ pip install ...
 ```
 
 # Preprocessing:
-
-```python
-rad = Radiomics(load_dir='Test_Cases/IBSI I/NIFTI/', 
-                save_dir='Test_Cases/IBSI I/Save/A_NIFTI',
-                input_data_type='NIFTI', 
-                input_imaging_mod='CT',
-                intensity_range=[-500, 400], 
-                bin_size=25, 
-                aggr_dim='2D', 
-                aggr_method='MERG',
-                list_of_patient_folders=['1'],
-                structure_set=['mask'],
-                nifti_image='phantom.nii.gz',
-                number_of_threads=1)
-rad.extract_radiomics()
-```
 
 > class Preprocessing(load_dir, save_dir, input_data_type, input_imaging_mod, structure_set=None,
                  just_save_as_nifti=False, resample_resolution=1.0, resample_dimension='3D',
@@ -91,13 +80,88 @@ rad.extract_radiomics()
 
     Default: '3D'
 
-    '3D': the image is resampled isotropicaly.
-    '2D': image is resampled inplane while original spacing is jeeped in the z-direction.
+    '3D': the image is resampled isotropically.
+    '2D': image is resampled in-plane while original spacing is jeeped in the z-direction.
+    
+11) image_interpolation_method: {'NN', 'Linear', 'BSpline', 'Gaussian'}
+
+    Data Type: str
+
+    Default: 'Linear'
+
+
+12) mask_interpolation_method: {'NN', 'Linear', 'BSpline', 'Gaussian'}
+
+    Data Type: str
+
+    Default: 'Linear'
+
+13) mask_interpolation_threshold:
+
+    Data Type: float in the range [0, 1]
+
+    Default: 0.5
+    
+14) start_folder, stop_folder
+
+    Data Type: None or int
+
+    Default: None
+  
+    If both start_folder and stop_folder are not None, then rad will take all patient folders in the range [start_folder, stop_folder]. For this to work ALL folders in the load_dir should contain ONLY int in their names.
+
+    list_of_patient_folders
+
+    Data Type: None or list of elements of type 'str'
+
+    Default: None
+
+    If list_of_patient_folders is not None, then rad will take all folders from the defined list. Note, in this case folders can contain any sybols or letters in their names.
+
+    If all start_folder, stop_folder, and list_of_patient_folders are None then rad will take all folders from the load_dir. Note, in this case folders can contain any sybols or letters in their names.
+
+15) nifti_image
+
+    Data Type: None or str
+
+    Default: None
+
+    Only for input_data_type = 'NIFTI', then specify the name of the nifti image file, e.g. nifti_image = 'image.nii.gz'.
+
+    Important to provide the file extension (both .nii and .nii.gz are supported). NIfTI image files should have IDENTICAL names for the patients you study.
+
+16) number_of_threads
+
+    Data Type: int
+
+    Default: 1
+
+    If greater than 1 - performs multiprocessing and distributes tasks among cores. Each core takes one patient. Mind the RAM when chousing the big amount of threads.
+
+
+
+# Examples:
+
+
+```python
+rad = Radiomics(load_dir='Test_Cases/IBSI I/NIFTI/', 
+                save_dir='Test_Cases/IBSI I/Save/A_NIFTI',
+                input_data_type='NIFTI', 
+                input_imaging_mod='CT',
+                intensity_range=[-500, 400], 
+                bin_size=25, 
+                aggr_dim='2D', 
+                aggr_method='MERG',
+                list_of_patient_folders=['1'],
+                structure_set=['mask'],
+                nifti_image='phantom.nii.gz',
+                number_of_threads=1)
+rad.extract_radiomics()
+```
+
     
 
-   
-
-  
+    
 
   
 
