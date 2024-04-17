@@ -37,7 +37,7 @@ Options to specify patient folders include:
      
 - Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
 
-     **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to resample only folders pat_1, pat_2, and pat_5. Thus I can specify the `patient folder list` accordingly (while 'start' and `stop` folder fields remain blank):
+     **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to resample only folders pat_1, pat_2, and pat_5. Thus I can specify the `patient folder list` accordingly (while the 'start' and `stop` folder fields remain blank):
   
      ![Select Patient Folders Option II](f2_load_pat_folders_2.PNG "Option II")
    
@@ -63,7 +63,7 @@ Options to specify patient folders include:
 - Type `ExtractAllMasks` to use all masks from the RTstruct file:
   ![DICOM Option II](f3_DICOM_2.PNG "DICOM Option II")
 - Leave `Studied str.` blank if you want only to resample the image without any masks.
-- Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be saved as separate NIfTI files).
+- Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be also saved as separate NIfTI files).
 
 #### For NIFTI: 
 - Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
