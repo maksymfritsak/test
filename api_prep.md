@@ -41,7 +41,7 @@ theme: architect
 
 * **nifti_image (str or None), default=None**: If the data type is NIFTI, specify the name of the NIFTI image file, including the extension.
   
-  ** Example**: `nifti_image='image.nii.gz`;
+  **Example**: `nifti_image='image.nii.gz`;
 
 * **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
 
@@ -131,6 +131,27 @@ prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI',
                      mask_interpolation_method='Linear',
                      mask_interpolation_threshold=0.5, 
                      list_of_patient_folders=['1'], 
+                     nifti_image='phantom.nii.gz',
+                     number_of_threads=1)
+prep.resample()
+```
+
+### IBSI II Ph. II Config. B (NIFTI):
+In this example, we perform resampling on the NIFTI phantom studied in IBSI II Phase II Configuration B.
+
+```python
+prep = Preprocessing(load_dir='Test_Cases/IBSI II/NIFTI', 
+                     save_dir='Test_Cases/IBSI II/NIFTI',
+                     input_data_type='NIFTI', 
+                     input_imaging_mod='CT', 
+                     structure_set=['mask'],
+                     just_save_as_nifti=False, 
+                     resample_resolution=1.0, 
+                     resample_dimension='3D',  
+                     image_interpolation_method='BSpline',
+                     mask_interpolation_method='Linear', 
+                     mask_interpolation_threshold=0.5,
+                     list_of_patient_folders=['1'],
                      nifti_image='phantom.nii.gz',
                      number_of_threads=1)
 prep.resample()
