@@ -4,7 +4,7 @@
 RAD supports both DICOM and NIfTI input file formats, facilitating diverse medical imaging workflows.
 
 ## DICOM: 
-Each patient's folder should contain exactly one DICOM series and not more than one RTstruct file.
+Each patient's folder should contain exactly one DICOM image series and not more than one RTstruct file.
 Rad supports only files with DICOM Modality tag (0008, 0060) equals CT, PT, MR, or RTSTRUCT.
 
 * **CT**: RAD assumes that CT is already provided in Hounsfiled Units.
