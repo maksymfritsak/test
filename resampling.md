@@ -37,7 +37,7 @@ Options to specify patient folders include:
      
 - Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
 
-     **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to resample only folders pat_1, pat_2, and pat_5. Thus I specify the `start` and `stop` folders accordingly:
+     **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to resample only folders pat_1, pat_2, and pat_5. Thus I can specify the `patient folder list` accordingly (while 'start' and `stop` folder fields remain blank):
   
      ![Select Patient Folders Option II](f2_load_pat_folders_2.PNG "Option II")
    
