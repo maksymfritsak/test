@@ -3,14 +3,19 @@ layout: default
 theme: architect
 ---
 
-# Prerequisites
+# RAD API:
+
+This approach is dedicated to users who are fluent in programming with Python and provides a great opportunity to integrate RAD into the research workflow without the necessity of interaction with the User Interface.
+
+
 To install the most recent version of rad:
 
 ```python
 pip install ...
 ```
-This approach is dedicated to users who are fluent in programming with Python and provides a great opportunity to integrate RAD into the research workflow without the necessity of interaction with the User Interface.
+
+## RAD API User Guide
 
 * [Resampling](api_prep.md);
-* Filtering;
+* [Filtering](api_filt.md);
 * [Radiomics](api_rad.md).
