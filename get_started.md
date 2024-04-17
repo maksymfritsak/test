@@ -1,4 +1,4 @@
-**Supported Platforms:** Windows, MacOS, Linux
+## Supported Platforms: Windows, MacOS, Linux
 
 # Available Data Types
 RAD supports both DICOM and NIfTI input file formats, facilitating diverse medical imaging workflows.
