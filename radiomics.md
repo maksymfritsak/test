@@ -9,7 +9,7 @@ theme: architect
 
 To perform radiomics calculation with RAD, click on the `Radiomics` tab located in the menu at the top-left corner.
 
-![Resampling Tab](f1.png "Resampling Tab")
+![Resampling Tab](f4_radiomics.PNG "Resampling Tab")
 
 ## Setting Up Directories
 
