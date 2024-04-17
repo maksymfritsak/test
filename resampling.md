@@ -49,11 +49,13 @@ Options to specify patient folders include:
 ## Configuring Resampling Options
 
 ### Image Data Type
-- **For DICOM**: Specify the studied structures list by typing your ROIs separated by commas.
-
-  Use `ExtractAllMasks` to use all masks in the RTstruct file.
-
-  Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox.
+#### DICOM:
+- Specify the studied structures list by typing your ROIs separated by commas.
+     **Example**: In my RTstruct file I have liver, lung, CTV, PTV, and GTV. I am interested only in liver, lung, CTV, and PTV structures. Thus, I write:
+     ![DICOM Option I](f3 "Option II")
+- Type `ExtractAllMasks` to use all masks from the RTstruct file.
+- Leave `Studied str.` blank if you want only to resample the image without any masks.
+- Optionally, save DICOM data as NIFTI without resampling by ticking the corresponding checkbox (if `Studied str.` is specified, corresponding masks will be saved as separate NIfTI files).
 
 - **For NIFTI**: Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
 
