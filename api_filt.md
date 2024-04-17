@@ -22,16 +22,17 @@ First of all, one needs to design a filter and then implement it to the data.
 * **sigma_mm (int, float)**: Defines the standard deviation of the Gaussian blur applied to an image before computing the Laplacian. This parameter controls the scale of the blur.
 * **cutoff (int, float)**:  The threshold value used to decide which edges to keep after applying the LoG filter. 
 * **dimensionality (str) {'2D', '3D'}**: '3D' - filter applied as a qube to the 3D image; '2D' - applied as a square to each slice
-* 
+  
 ## Laws Kernels:
 
 >class Laws(response_map, padding_type, distance, energy_map, dimensionality, rotation_invariance=False, pooling=None)
 
+* **response_map**
 * **padding_type (str) {'constant', 'nearest', 'wrap', 'reflect'}**: different strategies of handling boundary voxels. For more detailed information consult the [Filtering](filtering.md);
 * **distance (int)**:
 * **energy_map (bool)**:
+* **dimensionality (str) {'2D', '3D'}**: '3D' - filter applied as a qube to the 3D image; '2D' - applied as a square to each slice
 * **rotation_invariance (bool)**: '3D' - filter applied as a qube to the 3D image; '2D' - applied as a square to each slice.
-* **response_map**
 * **pooling**
 
 ## Wavelets:
@@ -39,3 +40,19 @@ First of all, one needs to design a filter and then implement it to the data.
 ### 2D
 
 >class Wavelets2D(wavelet_type, padding_type, response_map, decomposition_level, rotation_invariance=False)
+
+* **wavelet_type (str) {'db3', 'db2', 'coif1', 'haar'}**:
+* **padding_type (str) {'constant', 'nearest', 'wrap', 'reflect'}**: different strategies of handling boundary voxels. For more detailed information consult the [Filtering](filtering.md);
+* **response_map (str) {'LL', 'HL', 'LH', 'HH'}**:
+* **decomposition_level (int) {1,2}**:
+* **rotation_invariance (bool), default=False**:
+
+### 3D
+
+>class Wavelets3D(wavelet_type, padding_type, response_map, decomposition_level, rotation_invariance=False)
+
+* **wavelet_type (str) {'db3', 'db2', 'coif1', 'haar'}**:
+* **padding_type (str) {'constant', 'nearest', 'wrap', 'reflect'}**: different strategies of handling boundary voxels. For more detailed information consult the [Filtering](filtering.md);
+* **response_map (str) {'LLL', 'LLH', 'LHL', 'HLL', 'LHH', 'HHL', 'HLH', 'HHH'}**:
+* **decomposition_level (int) {1,2}**:
+* **rotation_invariance (bool), default=False**:
