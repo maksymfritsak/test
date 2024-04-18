@@ -84,5 +84,6 @@ Options to specify patient folders include:
 ## Optional Steps
 - **Save Input**: Save your configuration by going to the `File ` menu and clicking `Save Input`, or using the shortcut 'Ctrl+S'.
 - **Load Input**: Load a previously saved configuration by navigating to the `File` menu and selecting `Load Input` or pressing 'Ctrl+O'.
+  
 ## Run the Configuration
 When all fields are filled, click the `Run` button and monitor the resampling progress in the console.
