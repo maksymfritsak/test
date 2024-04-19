@@ -7,7 +7,7 @@ RAD supports both DICOM and NIfTI input file formats, facilitating diverse medic
 Each patient's folder should contain exactly one DICOM image series and not more than one RTstruct file.
 Rad supports only files with DICOM Modality tag (0008, 0060) equals CT, PT, MR, or RTSTRUCT.
 
-* **CT**: RAD checks whether the CT is already provided in Hounsfiled Units, by checking the DICOM Pixel Representation tag (0028, 0103).
+* **CT**: RAD checks whether the CT is already provided in Hounsfiled Units (HU), by checking the DICOM Pixel Representation tag (0028, 0103).
   If pixel representation is unsigned (no negative values in the image array) it is assumed to be in raw units, thus it will be converted to the HU with the help of Rescale Intercept (0028,1052) and Rescale Slope (0028,1053) tags.
   For the signed pixel representation data is assumed to be already in HU.
 * **PT**: RAD calculates the SUV with the body weight strategy. For this the following DICOM tags should be present: Radiopharmaceutical Start Time (0018,1072), Decay Correction (0054,1102), Radionuclide Half Life (0018,1075), Series Time (0008,0031), and Patient's Weight (0010,1030).
