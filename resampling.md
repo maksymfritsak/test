@@ -115,7 +115,7 @@ When all fields are filled, click the `Run` button and monitor the resampling pr
 * Linear ROI interpolation;
 * ROI rounding threshold 0.5.
 
-## IBSI I Config. C and D (NIFTI):
+## IBSI I Config. E (NIFTI):
 
 * Studied structure: mask;
 * NIfTI image: phantom.nii.gz;
