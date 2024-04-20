@@ -87,3 +87,44 @@ Options to specify patient folders include:
   
 ## Run the Configuration
 When all fields are filled, click the `Run` button and monitor the resampling progress in the console.
+
+# Example: 
+
+## IBSI I Config. B (DICOM): 
+
+* Studied structure: GTV-1;
+* Slice-wise resampling (2D);
+* Linear interpolation 2mm × 2mm (axial);
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
+## IBSI I Config. B (NIFTI): 
+
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Slice-wise resampling (2D);
+* Linear interpolation 2mm × 2mm (axial);
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
+## IBSI I Config. C and D (DICOM):
+
+* Studied structure: GTV-1;
+* Single volume (3D) resampling;
+* Linear interpolation 2mm × 2mm × 2mm;
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
+## IBSI I Config. C and D (NIFTI):
+
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Single volume (3D) resampling;
+* BSpline interpolation 2mm × 2mm × 2mm;
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
+
+
+  
+  
