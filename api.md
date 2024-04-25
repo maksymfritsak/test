@@ -6,7 +6,7 @@ theme: architect
 # Z-Rad API:
 
 
-This method is specifically tailored for users who possess a strong proficiency in Python. It offers an excellent way to seamlessly incorporate Z-Rad into your research processes, eliminating the need for direct interaction with the User Interface.
+This approach is specifically tailored for users who possess a strong proficiency in Python. It offers an excellent way to seamlessly incorporate Z-Rad into your research processes, eliminating the need for direct interaction with the User Interface.
 
 Below, you will find a detailed guide on how to leverage the capabilities of Z-Rad as an independent Python library.
 
