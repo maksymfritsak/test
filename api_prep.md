@@ -59,12 +59,12 @@ Here is described how resampling (see [User Guide](resampling.md)) can be perfor
 ### IBSI I Config. B (NIFTI):
 In this example, we perform resampling on the NIFTI phantom studied in IBSI I Configuration B.
 
-Studied structure: mask;
-NIfTI image: phantom.nii.gz;
-Slice-wise resampling (2D);
-Linear interpolation 2mm × 2mm (axial);
-Linear ROI interpolation;
-ROI rounding threshold 0.5.
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Slice-wise resampling (2D);
+* Linear interpolation 2mm × 2mm (axial);
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
 
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI',
@@ -166,6 +166,13 @@ prep.resample()
 
 ### IBSI II Ph. II Config. B (NIFTI):
 In this example, we perform resampling on the NIFTI phantom studied in IBSI II Phase II Configuration B.
+
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Single volume (3D) resampling;
+* BSpline interpolation 1mm × 1mm × 1mm;
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
 
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI II/NIFTI', 
