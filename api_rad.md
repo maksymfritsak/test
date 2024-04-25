@@ -43,7 +43,7 @@ theme: architect
 
   **Example**: `intensity_range = [-1000, 500]`.
 
-* **outlier_range (float, int, or None), default=None**: In $\sigma$. If not `None`, voxels that are not in the range [$\mu$-`outlier_range` $\times\sigma$, $\mu$+`outlier_range` $\times\sigma$] are excluded from the intensity ROI mask.
+* **outlier_range (float, int, or None), default=None**: In $\sigma$. If not `None`, voxels that are not in the range [ $\mu$ -`outlier_range` $\times\sigma$, $\mu$+`outlier_range` $\times\sigma$] are excluded from the intensity ROI mask.
 * **number_of_bins (int or None), default=None**
 * **bin_size (float, int, or None), default=None**
 
