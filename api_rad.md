@@ -27,15 +27,15 @@ theme: architect
 
   **Note!** Only the following 6 combinations are allowed:
   
-            * `aggr_dim`='2D' and `aggr_method`='AVER';
+      * `aggr_dim`='2D' and `aggr_method`='AVER';
 
-  * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
+      * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
   
-            * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
+      * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
 
-    * `aggr_dim`='2.5D' and `aggr_method`='MERG';
+      * `aggr_dim`='2.5D' and `aggr_method`='MERG';
     
-            * `aggr_dim`='3D' and `aggr_method`='AVER';
+      * `aggr_dim`='3D' and `aggr_method`='AVER';
 
       * `aggr_dim`='3D' and `aggr_method`='MERG'.
   
