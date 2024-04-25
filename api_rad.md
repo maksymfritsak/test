@@ -26,9 +26,8 @@ theme: architect
 * **aggr_method (str) {'MERG', 'AVER', 'SLICE_MERG', 'DIR_MERG'}, default='AVER'**: Different feature agregation methods. See the ??? guide for more details;
 
   **Note!** Only the following 6 combinations are allowed:
-  
-  
-          * `aggr_dim`='2D' and `aggr_method`='AVER';
+
+  * `aggr_dim`='2D' and `aggr_method`='AVER';
   
 
       * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
