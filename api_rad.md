@@ -16,14 +16,23 @@ theme: architect
 * **save_dir (str)**: Destination directory for saved data. RAD will create it if it does not exist;
 * **input_data_type (str) {'DICOM', 'NIFTI'}**: Supported medical data types are DICOM and NIfTI. See the [Get Started](get_started.md) guide for more details;
 * **input_imaging_mod (str) {'CT', 'PT', 'MR'}**: Modalities should be consistent across patients. See the [Get Started](get_started.md) guide for more details;
-* **structure_set (list[str])**: List of structure names to resample.
+* **structure_set (list[str])**: List of structure names from which to extract radiomics.
 
   **Example**: `structure_set=['lung', 'liver', 'CTV']`;
 
-  **Optional**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+  **Optional** For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
 
-* **aggr_dim (str) {'2D', '2.5D', '3D'}, default='3D'**
-* **aggr_method (str) {'MERG', 'AVER', 'SLICE_MERG', 'DIR_MERG'}, default='AVER'**
+* **aggr_dim (str) {'2D', '2.5D', '3D'}, default='3D'**: Single volume (3D) feature extraction, slice-wise (2D), or direction-slice-wise (2.5D);
+* **aggr_method (str) {'MERG', 'AVER', 'SLICE_MERG', 'DIR_MERG'}, default='AVER'**: Different feature agregation methods. See the ??? guide for more details;
+
+  **Note!** Only the following 6 combinations are allowed:
+            * `aggr_dim`='2D' and `aggr_method`='AVER';
+            * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
+            * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
+            * `aggr_dim`='2.5D' and `aggr_method`='MERG';
+            * `aggr_dim`='3D' and `aggr_method`='AVER';
+            * `aggr_dim`='3D' and `aggr_method`='MERG'.
+  
 * **intensity_range (list[float], list[int] or None), default=None**: If not None then voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
 
   **Example**: `intensity_range = [-1000, 500]`.
@@ -32,7 +41,7 @@ theme: architect
 * **number_of_bins (int or None), default=None**
 * **bin_size (float, int, or None), default=None**
 
-  **Note**: Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None is not supported.
+  **Note!** Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None is not supported.
 
 * **slice_weighting (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, for texture features performed weighting proportional to the number of voxels in ROI in the slice.
 * **slice_median (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, instead of averaging performed median selection.
