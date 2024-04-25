@@ -30,15 +30,16 @@ theme: architect
   * `aggr_dim`='2D' and `aggr_method`='AVER';
   
 
-      * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
+  * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
   
-      * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
+  * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
 
-      * `aggr_dim`='2.5D' and `aggr_method`='MERG';
+
+  * `aggr_dim`='2.5D' and `aggr_method`='MERG';
     
-      * `aggr_dim`='3D' and `aggr_method`='AVER';
+  * `aggr_dim`='3D' and `aggr_method`='AVER';
 
-      * `aggr_dim`='3D' and `aggr_method`='MERG'.
+  * `aggr_dim`='3D' and `aggr_method`='MERG'.
   
 * **intensity_range (list[float], list[int] or None), default=None**: If not None then voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
 
