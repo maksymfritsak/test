@@ -6,7 +6,7 @@ theme: architect
 
 # Preprocessing:
 
-Here is explained how described in [User Guide](resampling.md) resampling can be performed with Z-Rad API.
+Here is described how resampling (see [User Guide](resampling.md)) can be performed with Z-Rad API.
 
 > class Preprocessing(load_dir, save_dir, input_data_type, input_imaging_mod, structure_set=None,
                  just_save_as_nifti=False, resample_resolution=1.0, resample_dimension='3D',
@@ -59,6 +59,13 @@ Here is explained how described in [User Guide](resampling.md) resampling can be
 ### IBSI I Config. B (NIFTI):
 In this example, we perform resampling on the NIFTI phantom studied in IBSI I Configuration B.
 
+Studied structure: mask;
+NIfTI image: phantom.nii.gz;
+Slice-wise resampling (2D);
+Linear interpolation 2mm × 2mm (axial);
+Linear ROI interpolation;
+ROI rounding threshold 0.5.
+
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI',
                      save_dir='Test_Cases/IBSI I/Save/B_NIFTI',
@@ -80,6 +87,12 @@ prep.resample()
 ### IBSI I Config. B (DICOM):
 In this example, we perform resampling on the DICOM phantom studied in IBSI I Configuration B.
 
+* Studied structure: GTV-1;
+* Slice-wise resampling (2D);
+* Linear interpolation 2mm × 2mm (axial);
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/DICOM', 
                      save_dir='Test_Cases/IBSI I/Save/B_DICOM',
@@ -100,6 +113,12 @@ prep.resample()
 ### IBSI I Config. C and Config. D (DICOM):
 In this example, we perform resampling on the DICOM phantom studied in IBSI I. Resampling for Configurations C and D are identical.
 
+* Studied structure: GTV-1;
+* Single volume (3D) resampling;
+* Linear interpolation 2mm × 2mm × 2mm;
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
+
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/DICOM', 
                      save_dir='Test_Cases/IBSI I/Save/C_D_DICOM',
@@ -119,6 +138,13 @@ prep.resample()
 
 ### IBSI I Config. E (NIFTI):
 In this example, we perform resampling on the NIFTI phantom studied in IBSI I Configuration E.
+
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Single volume (3D) resampling;
+* BSpline interpolation 2mm × 2mm × 2mm;
+* Linear ROI interpolation;
+* ROI rounding threshold 0.5.
 
 ```python
 prep = Preprocessing(load_dir='Test_Cases/IBSI I/NIFTI', 
