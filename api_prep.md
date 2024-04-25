@@ -6,8 +6,6 @@ theme: architect
 
 # Preprocessing:
 
-Here is described how resampling (see [User Guide](resampling.md)) can be performed with Z-Rad API.
-
 > class Preprocessing(load_dir, save_dir, input_data_type, input_imaging_mod, structure_set=None,
                  just_save_as_nifti=False, resample_resolution=1.0, resample_dimension='3D',
                  image_interpolation_method='Linear',
