@@ -20,7 +20,7 @@ theme: architect
 
   **Example**: `structure_set=['lung', 'liver', 'CTV']`;
 
-  **Optional** For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
+  **Optional**: For DICOM input data type use `['ExtractAllMasks']` to include all structures in the RTstruct file;
 
 * **aggr_dim (str) {'2D', '2.5D', '3D'}, default='3D'**: Single volume (3D) feature extraction, slice-wise (2D), or direction-slice-wise (2.5D);
 * **aggr_method (str) {'MERG', 'AVER', 'SLICE_MERG', 'DIR_MERG'}, default='AVER'**: Different feature agregation methods. See the ??? guide for more details;
@@ -28,12 +28,10 @@ theme: architect
   **Note!** Only the following 6 combinations are allowed:
 
   * `aggr_dim`='2D' and `aggr_method`='AVER';
-  
 
   * `aggr_dim`='2D' and `aggr_method`='SLICE_MERG';
   
   * `aggr_dim`='2.5D' and `aggr_method`='DIR_MERG';
-
 
   * `aggr_dim`='2.5D' and `aggr_method`='MERG';
     
@@ -54,7 +52,7 @@ theme: architect
 * **slice_weighting (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, for texture features performed weighting proportional to the number of voxels in ROI in the slice.
 * **slice_median (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, instead of averaging performed median selection.
 
-  **Note**: Configuration where both `slice_weighting` and `slice_median` are True is not supported!
+  **Note!**: Configuration where both `slice_weighting` and `slice_median` are True is not supported!
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
 
