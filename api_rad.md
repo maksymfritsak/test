@@ -39,34 +39,35 @@ theme: architect
 
   * `aggr_dim`='3D' and `aggr_method`='MERG'.
   
-* **intensity_range (list[float], list[int] or None), default=None**: If not `None`, voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
+* **intensity_range (list[float], list[int] or None), default=None**: If non-`None`, voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
 
   **Example**: `intensity_range = [-1000, 500]`.
 
-* **outlier_range (float, int, or None), default=None**: In $\sigma$. If not `None`, voxels that are not in the range [ $\mu$ - `outlier_range` $\times\sigma$, $\mu$ + `outlier_range` $\times\sigma$] are excluded from the intensity ROI mask.
-* **number_of_bins (int or None), default=None**
-* **bin_size (float, int, or None), default=None**
+* **outlier_range (float, int, or None), default=None**: In $\sigma$. If non-`None`, voxels that are not in the range [ $\mu$ - `outlier_range` $\times\sigma$, $\mu$ + `outlier_range` $\times\sigma$] are excluded from the intensity ROI mask.
+* **number_of_bins (int or None), default=None**: If non-`None`, intensities within ROI are discretised to a fixed number of bins;
+* **bin_size (float, int, or None), default=None**: If non-`None`, a bin is assigned for every intensity interval, interval length is a `bin_size`;
 
-  **Note!** Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-None. Being both None or both non-None is not supported.
+  **Note!** Simultaneously only one of two binning strategies `number_of_bins` or `bin_size` should be non-`None`. Being both `None` or both non-`None` is not supported.
 
-* **slice_weighting (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, for texture features performed weighting proportional to the number of voxels in ROI in the slice.
-* **slice_median (bool), default=False**: If `aggr_dim='2D'` and `slice_weighting` is set to True, instead of averaging performed median selection.
+* **slice_weighting (bool), default=False**: If `aggr_dim`='2D' and `slice_weighting` set to True, for texture features, the weighting is proportional to the number of voxels in ROI in the slice;
+* **slice_median (bool), default=False**: If `aggr_dim`='2D' and `slice_weighting` set to True, for texture features, instead of averaging performed median selection;
 
-  **Note!**: Configuration where both `slice_weighting` and `slice_median` are True is not supported!
+  **Note 1**: Configuration where both `slice_weighting` and `slice_median` are True is not supported;
+  **Note 2**: Configuration where both `slice_weighting` and `slice_median` are False - averaging of features performed.
   
-* **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process.
+* **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process;
 
-  **Important**: If both `start_folder` and `stop_folder` are non-None, than **ALL** folder names inside the `load_dir` must be integers;
+  **Important**: If both `start_folder` and `stop_folder` are non-`None`, than **ALL** folder names inside the `load_dir` must be integers;
 
 * **list_of_patient_folders (list[str] or None), default=None**: Specify folders to process, allowing any symbols or letters in folder names;
 
-   **NOTE 1**: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are None then rad will take all folders from the `load_dir`;
+   **NOTE 1**: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are `None` then Z-Rad will take all folders from the `load_dir`;
   
-   **NOTE 2**: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are not None then rad will take all folders from in the `list_of_patient_folders`.
+   **NOTE 2**: If `start_folder`, `stop_folder`, and `list_of_patient_folders` are non-`None` then Z-Rad will take all folders from the `list_of_patient_folders`.
 
-* **nifti_image (str or None), default=None**: If the data type is NIFTI, specify the name of the NIFTI image file, including the extension.
-  
-  **Example**: `nifti_image='image.nii.gz'`;
+* **nifti_image (str or None), default=None**: If the data type is NIFTI, specify the name of the NIFTI image file, including the extension;
+
+  **Example**: `nifti_image='image.nii.gz'`.
 
 * **number_of_threads (int), default=1**: Number of threads for parallel processing. Consider the machine's RAM limits.
 
@@ -78,6 +79,14 @@ theme: architect
 ## Examples:
 
 ### IBSI I Config. A (NIFTI):
+
+* Studied structure: mask;
+* NIfTI image: phantom.nii.gz;
+* Slice-wise (2D) feature extraction;
+* Intensity range: [-500, 400];
+* Fixed bin size: 25.
+
+Here we perform only 'MERG' method.
 
 ```python
 rad = Radiomics(load_dir='Test_Cases/IBSI I/NIFTI/', 
@@ -96,6 +105,13 @@ rad.extract_radiomics()
 ```
 
 ### IBSI I Config. A (DICOM):
+
+* Studied structure: GTV-1;
+* Slice-wise (2D) feature extraction;
+* Intensity range: [-500, 400];
+* Fixed bin size: 25.
+
+Here we perform only 'MERG' method.
 
 ```python
 rad = Radiomics(load_dir='Test_Cases/IBSI I/DICOM/', 
