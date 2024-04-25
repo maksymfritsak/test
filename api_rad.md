@@ -53,6 +53,7 @@ theme: architect
 * **slice_median (bool), default=False**: If `aggr_dim`='2D' and `slice_weighting` set to True, for texture features, instead of averaging performed median selection;
 
   **Note 1**: Configuration where both `slice_weighting` and `slice_median` are True is not supported;
+  
   **Note 2**: Configuration where both `slice_weighting` and `slice_median` are False - averaging of features performed.
   
 * **start_folder, stop_folder (int or None), default=None**: Define a range of folders to process;
