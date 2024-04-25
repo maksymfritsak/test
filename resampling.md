@@ -29,7 +29,7 @@ Options to specify patient folders include:
 
 - Input `start` and `stop` folders to run all folders within the specified range, keeping the `patient folder list` blank (Note: **ALL** folder names in the load directory should be integers).                                                                                                                                                                        
 
-    **Exaple**: In my load directory I have six patient folders. These folders are named 1, 2, 5, 13, 20, 21. I want to resample only folders 5, 13, and 20. Thus I specify the `start` and `stop` folders accordingly:
+    **Exaple**: In my load directory I have six patient folders. These folders are named 2, 5, 13, 17, 20, 21. I want to resample only folders 5, 13, 17, and 20. Thus I specify the `start` and `stop` folders accordingly:
   
     ![Select Patient Folders Option I](f2_load_pat_folders_1.PNG "Option I")
 
