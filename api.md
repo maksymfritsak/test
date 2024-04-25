@@ -3,14 +3,14 @@ layout: default
 theme: architect
 ---
 
-# RAD API:
-
-This approach is dedicated to users who are fluent in programming with Python and provides a great opportunity to integrate RAD into the research workflow without the necessity of interaction with the User Interface.
-
-Below you will find a guide on how to use pover of each of the rad's tabs without the user interface.
+# Z-Rad API:
 
 
-But before this, to install the most recent version of rad:
+This method is specifically tailored for users who possess a strong proficiency in Python. It offers an excellent way to seamlessly incorporate Z-Rad into your research processes, eliminating the need for direct interaction with the User Interface.
+
+Below, you will find a detailed guide on how to leverage the capabilities of Z-Rad as an independent Python library.
+
+However, before we dive into the specifics, let's start by installing the latest version of Z-Rad:
 
 ```python
 pip install ...
