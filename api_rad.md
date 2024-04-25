@@ -39,11 +39,11 @@ theme: architect
 
   * `aggr_dim`='3D' and `aggr_method`='MERG'.
   
-* **intensity_range (list[float], list[int] or None), default=None**: If not None then voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
+* **intensity_range (list[float], list[int] or None), default=None**: If not `None`, voxels with intensities outside the provided `intensity_range` are excluded from the intensity ROI mask.
 
   **Example**: `intensity_range = [-1000, 500]`.
 
-* **outlier_range (float, int, or None), default=None**: If not None, the voxels that are outside the x sigma are excluded from the intensity mask.
+* **outlier_range (float, int, or None), default=None**: In $\sigma$. If not `None`, voxels that are not in the range [-`outlier_range` $\sigma$, `outlier_range` $\sigma$] are excluded from the intensity mask.
 * **number_of_bins (int or None), default=None**
 * **bin_size (float, int, or None), default=None**
 
