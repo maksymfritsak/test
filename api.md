@@ -7,8 +7,10 @@ theme: architect
 
 This approach is dedicated to users who are fluent in programming with Python and provides a great opportunity to integrate RAD into the research workflow without the necessity of interaction with the User Interface.
 
+Below you will find a guide on how to use pover of each of the rad's tabs without the user interface.
 
-To install the most recent version of rad:
+
+But before this, to install the most recent version of rad:
 
 ```python
 pip install ...
