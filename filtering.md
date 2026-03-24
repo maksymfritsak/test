@@ -1,6 +1,6 @@
 # Z-Rad: Data Filtering
 
-![Filtering Tab](filter_tab.png "Filtering Tab")
+![Filtering Tab](Filt_tab.png "Filtering Tab")
 
 <div style="text-align: justify;">
 
