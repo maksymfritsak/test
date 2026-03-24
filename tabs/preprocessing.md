@@ -101,7 +101,9 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 
 ## IBSI I Config. E (NIFTI):
 
-* Studied structure: mask;
+![Config. E](../figures/prepr_E.png "Config. E")
+
+* Studied structure: GTV-1.nii.gz;
 * NIfTI image: phantom.nii.gz;
 * Single volume (3D) resampling;
 * BSpline interpolation 2mm × 2mm × 2mm;
