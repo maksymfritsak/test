@@ -16,22 +16,24 @@
   text-decoration: underline;
 }
 
-/* Move everything slightly away from the left edge */
+/* Move whole layout slightly right */
 .wrapper {
-  max-width: 1400px;
-  margin-left: 60px;   /* ← key: shifts layout right */
+  max-width: none;
+  width: 100%;
+  margin-left: 60px;
+  margin-right: 0;
 }
 
-/* Keep sidebar fixed (default behavior) */
+/* Keep sidebar where you want it */
 header {
   position: fixed;
-  left: 60px;          /* ← move sidebar with wrapper */
+  left: 60px;
 }
 
-/* Push content to the right of sidebar */
+/* Let content use the remaining horizontal space */
 section {
-  margin-left: 320px;              /* keep sidebar offset */
-  margin-right: 40px;              /* small right margin */
-  max-width: none;                 /* 🔥 remove width limit */
-  width: auto;                     /* allow expansion */
+  margin-left: 320px;
+  margin-right: 40px;
+  width: calc(100vw - 420px);
+  max-width: none;
 }
