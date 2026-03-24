@@ -1,5 +1,22 @@
 title: 'Z-Rad: The Swiss Pocket Knife for Radiomics'
 logo: ZRadLogo.jpg
+
 remote_theme: pages-themes/minimal@v0.2.0
+
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-remote-theme
+
+# Add navigation manually
+navigation:
+  - title: Get Started
+    url: get_started.md
+  - title: Preprocessing
+    url: resampling.md
+  - title: Filtering
+    url: filtering.md
+  - title: Radiomics
+    url: radiomics.md
+  - title: Visualization
+    url: visualization.md
+  - title: API (Advanced)
+    url: api.md
