@@ -15,12 +15,3 @@
 .site-nav a:hover {
   text-decoration: underline;
 }
-
-.wrapper {
-  max-width: 1000px;   /* increase width (try 1200–1600) */
-  width: 75%;          /* use more of the screen */
-}
-
-section {
-  width: 100%;
-}
