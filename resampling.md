@@ -38,9 +38,7 @@ Under Data Type <b>(8)</b>, select whether the input data is in DICOM or NIfTI f
 <li>
 For DICOM data, specific RTSTRUCT structures can be selected <b>(8.1)</b>, or all available non-empty structures can be processed <b>(8.2)</b>. Additionally, selecting <b>(8.3)</b> allows saving both the DICOM images and chosen RTSTRUCT structures as NIfTI files without modification.
 </li>
-<ul>
 <img src="prepr_nii.png" alt="Preprocessing NIfTI" title="Preprocessing NIfTI">
-<ul>
 <li>
 For NIfTI data, the names of mask files <b>(8.4)</b> can be specified and processed together with the corresponding image <b>(8.5)</b>.
 </li>
