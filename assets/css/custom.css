@@ -15,3 +15,21 @@
 .site-nav a:hover {
   text-decoration: underline;
 }
+
+/* Move everything slightly away from the left edge */
+.wrapper {
+  max-width: 1400px;
+  margin-left: 60px;   /* ← key: shifts layout right */
+}
+
+/* Keep sidebar fixed (default behavior) */
+header {
+  position: fixed;
+  left: 60px;          /* ← move sidebar with wrapper */
+}
+
+/* Push content to the right of sidebar */
+section {
+  margin-left: 320px;  /* ← must be > sidebar width (~260px) */
+  max-width: 1000px;   /* wider content */
+}
