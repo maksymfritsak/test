@@ -1,5 +1,8 @@
-Z-Rad: The Swiss Pocket Knife for Radiomics
 ---
+layout: default
+title: Z-Rad
+---
+
 # About Z-Rad
 
 <div style="text-align: justify;">
