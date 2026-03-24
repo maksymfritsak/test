@@ -16,10 +16,10 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 ## Z-Rad User Manual
 
-- [Get Started](get_started.md)
-- [Preprocessing](resampling.md)
-- [Filtering](filtering.md)
-- [Radiomics](radiomics.md)
+- [Get Started](tabs/get_started.md)
+- [Preprocessing](tabs/preprocessing.md)
+- [Filtering](tabs/filtering.md)
+- [Radiomics](tabs/radiomics.md)
 - [Visualization]
 
 ---
