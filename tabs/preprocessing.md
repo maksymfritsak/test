@@ -91,6 +91,8 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 
 ## IBSI I Config. B (DICOM): 
 
+![Preprocessing Tab](../figures/prepr_tab.png "Preprocessing Tab")
+
 * Studied structure: GTV-1;
 * Slice-wise resampling (2D);
 * Linear interpolation 2mm × 2mm (axial);
