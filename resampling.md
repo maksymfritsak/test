@@ -55,7 +55,7 @@ For interpolation, select the desired method for images <b>(11)</b>, with availa
 </p>
 
 <p>
-For masks <b>(13)</b>, the same interpolation methods are available. When using methods other than Nearest Neighbor, a threshold must be defined since these methods produce values in the range <code>[0, 1]</code>. The default threshold is 0.5, meaning values below 0.5 are set to 0 and values equal to or above 0.5 are set to 1.
+For masks <b>(13)</b>, the same interpolation methods are available. When using methods other than Nearest Neighbor, a threshold must be defined since these methods produce values in the range <code>[0, 1]</code>. The default threshold is <code>0.5</code>, meaning values below <code>0.5</code> are set to <code>0</code> and values equal to or above <code>0.5</code> are set to <code>1</code>.
 </p>
 
 <p>
