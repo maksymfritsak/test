@@ -25,3 +25,5 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 </p>
 
 </div>
+
+# Examples
