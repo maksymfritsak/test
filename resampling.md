@@ -1,6 +1,6 @@
 # Z-Rad: Data Preprocessing
 
-![Resampling Tab](prepr_tab.png "Preprocessing Tab")
+![Preprocessing Tab](prepr_tab.png "Preprocessing Tab")
 
 <div style="text-align: justify;">
 
@@ -33,12 +33,12 @@ The output directory <b>(7)</b> specifies where the processed data will be saved
 <p>
 Under Data Type <b>(8)</b>, select whether the input data is in DICOM or NIfTI format.
 </p>
-
+![Preprocessing DICOM](prepr_dcm.png "Preprocessing DICOM")
 <ul>
 <li>
 For DICOM data, specific RTSTRUCT structures can be selected <b>(8.1)</b>, or all available non-empty structures can be processed <b>(8.2)</b>. Additionally, selecting <b>(8.3)</b> allows saving both the DICOM images and chosen RTSTRUCT structures as NIfTI files without modification.
 </li>
-
+![Preprocessing NIfTI](prepr_nii.png "Preprocessing NIfTI")
 <li>
 For NIfTI data, the names of mask files <b>(8.4)</b> can be specified and processed together with the corresponding image <b>(8.5)</b>.
 </li>
