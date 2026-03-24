@@ -61,7 +61,6 @@ main_path/
       └── CT/
            ├── folder_1/
            ├── folder_2/
-           ├── folder_2/
            ├── ...
            └── folder_n/
 ```
