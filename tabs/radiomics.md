@@ -1,6 +1,6 @@
 # Z-Rad: Radiomics Extraction
 
-![Radiomics Tab](Rad_tab.png "Radiomics Tab")
+![Radiomics Tab](../figures/Rad_tab.png "Radiomics Tab")
 
 <div style="text-align: justify;">
 

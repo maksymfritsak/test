@@ -18,7 +18,7 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 - [Get Started](get_started.md)
 - [Preprocessing](resampling.md)
-- [Filtering](filtering.md)
+- [Filtering](../filtering.md)
 - [Radiomics](radiomics.md)
 - [Visualization]
 

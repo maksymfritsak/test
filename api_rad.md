@@ -14,8 +14,8 @@ theme: architect
 
 * **load_dir (str)**: Path to the directory containing patient folders;
 * **save_dir (str)**: Destination directory for saved data. RAD will create it if it does not exist;
-* **input_data_type (str) {'DICOM', 'NIFTI'}**: Supported medical data types are DICOM and NIfTI. See the [Get Started](get_started.md) guide for more details;
-* **input_imaging_mod (str) {'CT', 'PT', 'MR'}**: Modalities should be consistent across patients. See the [Get Started](get_started.md) guide for more details;
+* **input_data_type (str) {'DICOM', 'NIFTI'}**: Supported medical data types are DICOM and NIfTI. See the [Get Started](tabs/get_started.md) guide for more details;
+* **input_imaging_mod (str) {'CT', 'PT', 'MR'}**: Modalities should be consistent across patients. See the [Get Started](tabs/get_started.md) guide for more details;
 * **structure_set (list[str])**: List of structure names from which to extract radiomics.
 
   **Example**: `structure_set=['lung', 'liver', 'CTV']`;

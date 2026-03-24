@@ -1,6 +1,6 @@
 # Z-Rad: Data Preprocessing
 
-![Preprocessing Tab](prepr_tab.png "Preprocessing Tab")
+![Preprocessing Tab](../figures/prepr_tab.png "Preprocessing Tab")
 
 <div style="text-align: justify;">
 
@@ -35,7 +35,7 @@ Under Data Type <b>(8)</b>, select whether the input data is in DICOM or NIfTI f
 </p>
 
 <p>
-<img src="prepr_dcm.png" alt="Preprocessing DICOM" title="Preprocessing DICOM" style="width: 100%; height: auto;">
+<img src="../figures/prepr_dcm.png" alt="Preprocessing DICOM" title="Preprocessing DICOM" style="width: 100%; height: auto;">
 </p>
 
 <ul>
@@ -45,7 +45,7 @@ Under Data Type <b>(8)</b>, select whether the input data is in DICOM or NIfTI f
 </ul>
 
 <p>
-<img src="prepr_nii.png" alt="Preprocessing NIfTI" title="Preprocessing NIfTI" style="width: 100%; height: auto;">
+<img src="../figures/prepr_nii.png" alt="Preprocessing NIfTI" title="Preprocessing NIfTI" style="width: 100%; height: auto;">
 </p>
 
 <ul>
