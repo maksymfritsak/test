@@ -31,5 +31,5 @@ header {
 /* Push content to the right of sidebar */
 section {
   margin-left: 320px;  /* ← must be > sidebar width (~260px) */
-  max-width: 1000px;   /* wider content */
+  max-width: 1600px;   /* wider content */
 }
