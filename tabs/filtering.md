@@ -38,7 +38,7 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 </div>
 
 <div style="text-align: center;">
-  <img src="../figures/Filtering_Res.png" alt="Filtering Results" style="max-width: 100%;">
+  <img src="../figures/Filtering_Res.png" alt="Filtering Results" style="max-width: 75%;">
   <p>
     A) no filtering; B) after 3D mean filter (mirror padding, 5 voxel support); 
     C) after 3D LoG filter (mirror padding, 1.5 mm scale, 4σ cutoff); 
