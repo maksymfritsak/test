@@ -23,8 +23,6 @@ pip install -r requirements.txt
 
 4. Run the `main.py` file:
 
-5. Start Z-Rad:
-
 ```sh
 python main.py
 ```
