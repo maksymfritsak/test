@@ -1,8 +1,3 @@
----
-layout: default
-theme: architect
----
-
 # RAD: Resampling
 
 <div style="text-align: justify;">
