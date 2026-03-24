@@ -51,3 +51,49 @@ Intensity–volume histogram features, as well as computationally expensive feat
 </li>
 </ul>
 </div>
+
+<p><b>Available Radiomic Features:</b></p>
+
+<div style="overflow-x: auto;">
+
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
+
+<tr>
+<th>Morphological features</th>
+<th>Local intensity features</th>
+<th>Intensity-based statistical features</th>
+<th>Intensity histogram features</th>
+<th>GLCM features</th>
+<th>GLRLM features</th>
+<th>GLSZM / GLDZM features</th>
+</tr>
+
+<tr><td>Volume (mesh)</td><td>Local intensity peak</td><td>Mean</td><td>Mean</td><td>Joint maximum</td><td>Short runs emphasis</td><td>Small zone / distance emphasis</td></tr>
+<tr><td>Volume (voxel counting)</td><td>Global intensity peak</td><td>Variance</td><td>Variance</td><td>Joint average</td><td>Long runs emphasis</td><td>Large zone / distance emphasis</td></tr>
+<tr><td>Surface area (mesh)</td><td></td><td>Skewness</td><td>Skewness</td><td>Joint variance</td><td>Low grey level run emphasis</td><td>Low grey level emphasis</td></tr>
+<tr><td>Surface to volume ratio</td><td></td><td>(Excess) kurtosis</td><td>(Excess) kurtosis</td><td>Joint entropy</td><td>High grey level run emphasis</td><td>High grey level emphasis</td></tr>
+<tr><td>Compactness 1</td><td></td><td>Median</td><td>Median</td><td>Difference average</td><td>Short run low grey level emphasis</td><td>Small zone low grey level emphasis</td></tr>
+<tr><td>Compactness 2</td><td></td><td>Minimum</td><td>Minimum</td><td>Difference variance</td><td>Short run high grey level emphasis</td><td>Small zone high grey level emphasis</td></tr>
+<tr><td>Spherical disproportion</td><td></td><td>10th percentile</td><td>10th percentile</td><td>Difference entropy</td><td>Long run low grey level emphasis</td><td>Large zone low grey level emphasis</td></tr>
+<tr><td>Sphericity</td><td></td><td>90th percentile</td><td>90th percentile</td><td>Sum average</td><td>Long run high grey level emphasis</td><td>Large zone high grey level emphasis</td></tr>
+<tr><td>Asphericity</td><td></td><td>Maximum</td><td>Maximum</td><td>Sum variance</td><td>Grey level non-uniformity</td><td>Grey level non-uniformity</td></tr>
+<tr><td>Centre of mass shift</td><td></td><td>Interquartile range</td><td>Mode</td><td>Sum entropy</td><td>Normalised grey level non-uniformity</td><td>Normalised grey level non-uniformity</td></tr>
+<tr><td>Maximum 3D diameter</td><td></td><td>Range</td><td>Interquartile range</td><td>Angular second moment</td><td>Run length non-uniformity</td><td>Zone size / distance non-uniformity</td></tr>
+<tr><td>Major axis length</td><td></td><td>Mean absolute deviation</td><td>Range</td><td>Contrast</td><td>Normalised run length non-uniformity</td><td>Normalised zone size / distance non-uniformity</td></tr>
+<tr><td>Minor axis length</td><td></td><td>Robust mean absolute deviation</td><td>Mean absolute deviation</td><td>Dissimilarity</td><td>Run percentage</td><td>Zone percentage</td></tr>
+<tr><td>Least axis length</td><td></td><td>Median absolute deviation</td><td>Robust mean absolute deviation</td><td>Inverse difference</td><td>Grey level variance</td><td>Grey level variance</td></tr>
+<tr><td>Elongation</td><td></td><td>Coefficient of variation</td><td>Median absolute deviation</td><td>Normalised inverse difference</td><td>Run length variance</td><td>Zone size / distance variance</td></tr>
+<tr><td>Flatness</td><td></td><td>Quartile coefficient of dispersion</td><td>Coefficient of variation</td><td>Inverse difference moment</td><td>Run entropy</td><td>Zone size / distance entropy</td></tr>
+<tr><td>Volume density (AABB)</td><td></td><td>Energy</td><td>Quartile coefficient of dispersion</td><td>Normalised inverse difference moment</td><td></td><td></td></tr>
+<tr><td>Area density (AABB)</td><td></td><td>Root mean square</td><td>Entropy</td><td>Inverse variance</td><td></td><td></td></tr>
+<tr><td>Volume density (AEE)</td><td></td><td>Uniformity</td><td></td><td>Correlation</td><td></td><td></td></tr>
+<tr><td>Area density (AEE)</td><td></td><td>Maximum histogram gradient</td><td></td><td>Autocorrelation</td><td></td><td></td></tr>
+<tr><td>Volume density (MVEE)</td><td></td><td>Maximum histogram gradient intensity</td><td></td><td>Cluster tendency</td><td></td><td></td></tr>
+<tr><td>Area density (MVEE)</td><td></td><td>Minimum histogram gradient</td><td></td><td>Cluster shade</td><td></td><td></td></tr>
+<tr><td>Volume density (convex hull)</td><td></td><td>Minimum histogram gradient intensity</td><td></td><td>Cluster prominence</td><td></td><td></td></tr>
+<tr><td>Area density (convex hull)</td><td></td><td>Integrated intensity</td><td></td><td>Information correlation 1</td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td>Information correlation 2</td><td></td><td></td></tr>
+
+</table>
+
+</div>
