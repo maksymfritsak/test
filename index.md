@@ -19,10 +19,10 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 ## Z-Rad User Manual
 
-- [Get Started](/tabs/get_started.html)
-- [Preprocessing](/tabs/preprocessing.html)
-- [Filtering](/tabs/filtering.html)
-- [Radiomics](/tabs/radiomics.html)
+- [Get Started]({{ '/tabs/get_started.html' | relative_url }})
+- [Preprocessing]({{ '/tabs/preprocessing.html' | relative_url }})
+- [Filtering]({{ '/tabs/filtering.html' | relative_url }})
+- [Radiomics]({{ '/tabs/radiomics.html' | relative_url }})
 - Visualization (coming soon)
 
 ---
@@ -31,7 +31,7 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 <div style="text-align: justify;">
 For advanced usage, we recommend using Z-Rad via its Python API, which can be seamlessly integrated into research workflows. 
-The <a href="/tabs/api.html">Z-Rad API documentation</a> provides guides and examples to help you get started.
+The <a href="{{ '/tabs/api.html' | relative_url }}">Z-Rad API documentation</a> provides guides and examples to help you get started.
 </div>
 
 ## Contact Us
