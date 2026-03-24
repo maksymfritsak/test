@@ -78,10 +78,10 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 
 <ul>
 <li>
-Save Input: Save your configuration by going to the File menu and clicking Save Input, or using the shortcut <code>Ctrl+S</code>.
+<b>Save Input:</b> Save your configuration by going to the File menu and clicking Save Input, or using the shortcut <code>Ctrl+S</code>.
 </li>
 <li>
-Load Input: Load a previously saved configuration by navigating to the File menu and selecting Load Input or pressing <code>Ctrl+O</code>.
+<b>Load Input:</b> Load a previously saved configuration by navigating to the File menu and selecting Load Input or pressing <code>Ctrl+O</code>.
 </li>
 </ul>
 
