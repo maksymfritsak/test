@@ -52,7 +52,7 @@ Intensity–volume histogram features, as well as computationally expensive feat
 </ul>
 </div>
 
-<p><b>Available Radiomic Features:</b></p>
+<p><b> GUI Available Radiomic Features:</b></p>
 
 <div style="overflow-x: auto;">
 
