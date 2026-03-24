@@ -4,9 +4,13 @@ Z-Rad: The Swiss Pocket Knife for Radiomics
 
 <div style="text-align: justify;">
 
-Z-Rad is an open-source, Python-based, all-in-one radiomics tool developed at the Department of Radiation Oncology of the University Hospital Zurich for medical image preprocessing, filtering, visualization, and standardized feature extraction. 
+<p>
+Z-Rad is an open-source, Python-based, all-in-one radiomics tool developed at the Department of Radiation Oncology of the University Hospital Zurich for medical image preprocessing, filtering, visualization, and standardized feature extraction.
+</p>
 
+<p>
 Designed for both zero-programming users and advanced researchers, it combines an intuitive graphical user interface with a flexible Python API, supports DICOM and NIfTI data across CT, PET, MRI, mammography, and 3D dose imaging, and runs on Windows, macOS, and Linux. With IBSI-compliant radiomics and modality-aware preprocessing, Z-Rad enables robust and reproducible radiomics analysis for clinical research.
+</p>
 
 </div>
 
