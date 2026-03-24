@@ -1,4 +1,4 @@
-title: 'Z-Rad: The Swiss Pocket Knife for Radiomics'
+title: "Z-Rad: The Swiss Pocket Knife for Radiomics"
 logo: /figures/ZRadLogo.jpg
 
 remote_theme: pages-themes/minimal@v0.2.0
@@ -8,14 +8,14 @@ plugins:
 
 navigation:
   - title: Get Started
-    url: /get_started.html
+    url: /tabs/get_started.html
   - title: Preprocessing
-    url: /resampling.html
+    url: /tabs/resampling.html
   - title: Filtering
-    url: /filtering.html
+    url: /tabs/filtering.html
   - title: Radiomics
-    url: /radiomics.html
+    url: /tabs/radiomics.html
   - title: Visualization
-    url: /visualization.html
+    url: /tabs/visualization.html
   - title: API (Advanced)
-    url: /api.html
+    url: /tabs/api.html
