@@ -1,5 +1,6 @@
-Supported Platforms: Windows, macOS, Linux
-Data Structure
+## Supported Platforms: Windows, macOS, Linux
+
+## Data Structure
 To run Z-Rad on your data, it must be organized in a specific directory structure. To process `folder_1`, `folder_2`, …, `folder_n`, the data should be arranged as follows:
 ```
 main_path/
