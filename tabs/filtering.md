@@ -40,9 +40,9 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 <div style="text-align: center;">
   <img src="../figures/Filtering_Res.png" alt="Filtering Results" style="max-width: 75%;">
   <p>
-    Fig. 1: A) no filtering; B) after 3D mean filter (mirror padding, 5 voxel support); 
-    C) after 3D LoG filter (mirror padding, 1.5 mm scale, 4σ cutoff); 
-    D) after 3D Daubechies 3 wavelet filter (mirror padding, 1st level, LLH response, pseudo-rotational invariance).
+    Fig. 1: A) no filtering; B) after 3D mean filter (reflect padding, 5 voxel support); 
+    C) after 3D LoG filter (reflect padding, 1.5 mm scale, 4σ cutoff); 
+    D) after 3D Daubechies 3 wavelet filter (reflect padding, 1st level, LLH response, pseudo-rotational invariance).
   </p>
 </div>
 
