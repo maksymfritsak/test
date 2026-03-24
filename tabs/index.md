@@ -31,9 +31,26 @@ For advanced usage, we recommend using Z-Rad via its Python API, which can be se
 The <a href="/tabs/api.html">Z-Rad API documentation</a> provides guides and examples to help you get started.
 </div>
 
+---
+
+## Citation
+
+<div style="text-align: justify;">
+If you use this work, please cite the following publication:
+
+Fritsak M, Bogowicz M, Vuong D, Dietsche F, Joye A, Guckenberger M, 
+Tanadini-Lang S, Gabryś HS. <i>Z-Rad: the Swiss pocket knife for radiomics</i>. 
+Radiotherapy and Oncology. 2025;206:S3712–S3714. 
+<a href="https://doi.org/10.1016/S0167-8140(25)01196-X">
+https://doi.org/10.1016/S0167-8140(25)01196-X
+</a>
+
+---
+
 ## Contact Us
 
 <div style="text-align: justify;">
 Should you have any questions, feel free to reach out via email at 
 <a href="mailto:zrad@usz.ch">zrad@usz.ch</a>.
+
 </div>
