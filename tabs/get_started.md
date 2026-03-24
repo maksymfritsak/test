@@ -1,3 +1,34 @@
+## Installation
+
+### Option 1: Windows executable file
+The simplest way to run Z-Rad on Windows is to start the `z-rad.exe` attached to every Z-Rad release.
+
+### Option 2: Install from GitHub (Windows, Linux, macOS)
+Use this option if you want to run Z-Rad from source code.
+
+1. Clone the repository:
+   
+```sh
+git clone https://github.com/medical-physics-usz/z-rad.git
+cd z-rad
+```
+
+2. (Optional but recommended) Create and activate a virtual environment:
+
+3. Install dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+4. Run the `main.py` file:
+
+5. Start Z-Rad:
+
+```sh
+python main.py
+```
+
 ## Support 
  * Windows, macOS, Linux
  * DICOM, NIfTI
