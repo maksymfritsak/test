@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title }}</h1>
+
+        {% if site.logo %}
+          <img src="{{ site.logo }}" alt="logo">
+        {% endif %}
+
+        <nav>
+          <ul>
+            {% for item in site.navigation %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+  </body>
+</html>
