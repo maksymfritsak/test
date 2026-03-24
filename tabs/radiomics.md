@@ -101,3 +101,14 @@ Intensity–volume histogram features, as well as computationally expensive feat
 </ul>
 
 </div>
+
+# Example
+
+![Radiomics Example](../figures/Rad_example.png "Radiomics Example")
+
+* Extract radiomics from `phantom.nii.gz` in the volume of the mask `GTV-1.nii.gz`  
+* Without filtered image
+* Without outlier removal 
+* Intensity Range:`-400, 400`
+* Texture Aggregation Method `3D, averaged`  
+*Bin Size: `32`
