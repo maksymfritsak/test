@@ -37,4 +37,6 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 
 </div>
 
+![Filtering Results](../figures/Filtering_Res.png "Filtering Results")
+
 # Examples
