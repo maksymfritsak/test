@@ -31,14 +31,22 @@ main_path/
     ├── ...
     └── folder_n/
 ```
+
+
 <div style="text-align: justify;">
-Z-Rad supports both DICOM and NIfTI file formats for the folder content.
+
 <p>
-DICOM data:  
+Z-Rad supports both DICOM and NIfTI file formats for the folder content.
+</p>
+
+<p>
+<b>DICOM data:</b><br>
 Each `folder_i` must contain exactly one imaging series (e.g., PET, CT, MRI, mammography, or 3D dose distribution) and no more than one RTSTRUCT file. If multiple RTSTRUCT files are present, only the first detected file will be used.
 </p>
+
 <p>
-NIfTI data:  
+<b>NIfTI data:</b><br>
 Each `folder_i` may contain multiple imaging modalities along with their corresponding segmentation masks, stored as `.nii` or `.nii.gz` files. To ensure consistent processing across folders, image files that are intended to be processed together must have identical filenames in all folders.
 </p>
+
 </div>
