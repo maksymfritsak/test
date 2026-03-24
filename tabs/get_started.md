@@ -13,7 +13,7 @@ git clone https://github.com/medical-physics-usz/z-rad.git
 cd z-rad
 ```
 
-2. (Optional but recommended) Create and activate a virtual environment:
+2. (Optional but recommended) Create and activate a virtual environment.
 
 3. Install dependencies:
 
