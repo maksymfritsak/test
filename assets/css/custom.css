@@ -17,8 +17,8 @@
 }
 
 .wrapper {
-  max-width: 1400px;   /* increase width (try 1200–1600) */
-  width: 95%;          /* use more of the screen */
+  max-width: 1000px;   /* increase width (try 1200–1600) */
+  width: 75%;          /* use more of the screen */
 }
 
 section {
