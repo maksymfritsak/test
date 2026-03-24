@@ -38,11 +38,11 @@ Under Data Type <b>(8)</b>, select whether the input data is in DICOM or NIfTI f
 </p>
 
 <p>
-For DICOM data, specific RTSTRUCT structures can be selected <b>(8.1)</b>, or all available non-empty structures can be processed <b>(8.2)</b>. Additionally, selecting <b>(8.3)</b> allows saving both the DICOM images and chosen RTSTRUCT structures as NIfTI files without modification.
+* For DICOM data, specific RTSTRUCT structures can be selected <b>(8.1)</b>, or all available non-empty structures can be processed <b>(8.2)</b>. Additionally, selecting <b>(8.3)</b> allows saving both the DICOM images and chosen RTSTRUCT structures as NIfTI files without modification.
 </p>
 
 <p>
-For NIfTI data, the names of mask files <b>(8.4)</b> can be specified and processed together with the corresponding image <b>(8.5)</b>.
+* For NIfTI data, the names of mask files <b>(8.4)</b> can be specified and processed together with the corresponding image <b>(8.5)</b>.
 </p>
 
 <p>
@@ -67,8 +67,8 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 
 <p>
 <b>Note:</b><br>
-Save Input: Save your configuration by going to the File menu and clicking Save Input, or using the shortcut <code>Ctrl+S</code>.<br>
-Load Input: Load a previously saved configuration by navigating to the File menu and selecting Load Input or pressing <code>Ctrl+O</code>.
+* Save Input: Save your configuration by going to the File menu and clicking Save Input, or using the shortcut <code>Ctrl+S</code>.<br>
+* Load Input: Load a previously saved configuration by navigating to the File menu and selecting Load Input or pressing <code>Ctrl+O</code>.
 </p>
 
 </div>
