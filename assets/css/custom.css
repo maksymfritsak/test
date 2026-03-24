@@ -33,6 +33,6 @@ header {
 /* This is the important part */
 section {
   float: right;
-  width: 1150px;
+  width: 900px;
   max-width: none;
 }
