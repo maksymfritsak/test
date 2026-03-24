@@ -16,24 +16,23 @@
   text-decoration: underline;
 }
 
-/* Move whole layout slightly right */
+/* Wider overall page */
 .wrapper {
+  width: 1500px;
   max-width: none;
-  width: 100%;
-  margin-left: 60px;
-  margin-right: 0;
+  margin: 0 auto;
 }
 
-/* Keep sidebar where you want it */
+/* Keep sidebar fixed, same size, just shifted a bit */
 header {
   position: fixed;
   left: 60px;
+  width: 270px;
 }
 
-/* Let content use the remaining horizontal space */
+/* This is the important part */
 section {
-  margin-left: 320px;
-  margin-right: 40px;
-  width: calc(100vw - 420px);
+  float: right;
+  width: 1150px;
   max-width: none;
 }
