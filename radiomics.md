@@ -1,79 +1,43 @@
----
-layout: default
-theme: architect
----
+# Z-Rad: Radiomics Extraction
 
-# RAD: Radiomics
+![Radiomics Tab](Rad_tab.png "Radiomics Tab")
 
-## Accessing the Resampling Tab
+<div style="text-align: justify;">
 
-To perform radiomics calculation with RAD, click on the `Radiomics` tab located in the menu at the top-left corner.
+<p>
+The upper part <b>(1)</b> of the Radiomics tab is identical in layout to the corresponding section in the Preprocessing and Filtering tabs.
+</p>
 
-![Resampling Tab](f4_radiomics.png "Resampling Tab")
+<p>
+Under Data Type <b>(2)</b>, the user can select whether the input images are provided in DICOM or NIfTI formats.
+</p>
 
-## Setting Up Directories
+<p>
+The Intensity Range <b>(3)</b> option enables restriction of the analyzed voxel intensities to a user-defined range. This is useful for excluding irrelevant intensity values and ensuring that radiomic features are computed only within the desired signal interval.
+</p>
 
-Specify the **load directory** (the directory that contains patient folders) by either:
-- Clicking on `Load Directory` and navigating to the folder.
-- Copying the directory path into the blank field to the right of the `Load Directory` button.
+<p>
+The Outlier Removal (in σ) <b>(4)</b> option enables removal of extreme voxel values based on a specified number of standard deviations. This excludes high or low intensity voxels, however may produce “holes” in the segmentation mask.
+</p>
 
-Use the same approaches to choose the **save directory** (the directory where radiomics reports will be saved). 
-Inside the save directory, each report for each patient will be saved as a .xlsx file.
-RAD will automatically create the provided save directory if it does not exist.
+<p>
+The Texture Aggregation Method <b>(5)</b> defines how texture matrices are combined during radiomic feature calculation. The available aggregation strategies include <b>2D</b> (slice-wise), <b>2.5D</b> (aggregation across directions or slices), and full <b>3D</b> aggregation. Since texture features may vary depending on the aggregation strategy, this parameter should be selected consistently across all analyzed cases.
+</p>
 
-### Imaging Modality
-Select the imaging modality (supported options: PET, CT, and MR). For details on how RAD processes each modality, refer to the [Get Started](get_started.md) guide.
+<p>
+The Discretization <b>(6)</b> setting specifies how image intensities are discretized prior to texture feature computation. Two IBSI-compliant strategies are supported: <b>fixed bin size (FBS)</b>, where a constant intensity width is used for binning, and <b>fixed bin number (FBN)</b>, where the number of gray levels is predefined. The choice of discretization strategy and its parameters (bin size or number of bins) strongly influences higher-order texture features.
+</p>
 
-## Select Patient Folders
-Options to specify patient folders include:
+<p>
+After all parameters have been configured, pressing RUN <b>(7)</b> initiates the radiomics extraction pipeline. The resulting feature tables are saved in the selected output directory as <code>.csv</code> files. Each file begins with the patient ID, followed by the mask ID, bounding box dimensions, number of voxels within the mask, and the number of bins used for discretization. These are followed by the extracted radiomic features. All radiomic features and aggregation methods are computed in accordance with IBSI I.
+</p>
 
-- Input `start` and `stop` folders to run all folders within the specified range, keeping the `patient folder list` blank (Note: **ALL** folder names in the load directory should be integers).                                                                                                                                                                        
+<p><b>Note:</b></p>
 
-    **Exaple**: In my load directory I have six patient folders. These folders are named 1, 2, 5, 13, 20, 21. I want to calculate radiomics for patients 5, 13, and 20. Thus I specify the `start` and `stop` folders accordingly:
-  
-    ![Select Patient Folders Option I](f2_load_pat_folders_1.PNG "Option I")
+<ul>
+<li>
+Intensity–volume histogram features, as well as computationally expensive features such as Moran’s I and Geary’s C, are not available in the GUI and can only be accessed through the API.
+</li>
+</ul>
 
-    **Important**: Boundary folders (in the example above 5 and 20) should always exist!
-     
-- Define a specific `list of patient folders` without using `start` and `stop` folders (Note: folders can include symbols and letters).
-
-     **Example**: In my load directory I have four patient folders. These folders are named pat_1, pat_2, pat_4, pat_5. I want to calculate radiomics for patients pat_1, pat_2, and pat_5. Thus I can specify the `patient folder list` accordingly (while the 'start' and `stop` folder fields remain blank):
-  
-     ![Select Patient Folders Option II](f2_load_pat_folders_2.PNG "Option II")
-   
-     **Important**: Selected folders should always exist!
-
-- Leave the `patient folder list`, `start`, and `stop` folders blank; RAD will process all folders in the provided load directory. (Note: folders can include symbols and letters).
-
-## Processing
-- Select the number of threads for parallel processing. Rad calculates one patient at one thread at a time. Keep in mind the RAM limits of your machine.
-
-## Configuring Resampling Options
-
-### Image Data Type
-#### DICOM:
-- Specify the studied structures list by typing your ROIs separated by commas.
-
-     **Example**: In my RTstruct file I have liver, lung, CTV, PTV, and GTV. I am interested only in liver, lung, CTV, and PTV structures. Thus, I write:
-  
-     ![DICOM Option I](f3_DICOM_1.PNG "DICOM Option I")
-
-     **Important**: If one or more selected structures do not exist, Rad will skip them.
-  
-- Type `ExtractAllMasks` to use all masks from the RTstruct file:
-  ![DICOM Option II](f3_DICOM_2.PNG "DICOM Option II")
-
-#### NIfTI: 
-- Specify the NIfTI structure files list by typing the file names separated by commas, **excluding** the file extension. Specify the NIfTI image **including** the file extension.
-
-     **Example**: If in all patient folders I have masks: liver.nii.gz, ctv.nii.gz, and ptv.nii.gz and image ct_scan.nii.gz and I want to calculate radiomics only for liver and ctv masks together with the image, I type the following:
-
-     ![NIFTI Option I](f3_NIFTI_1.PNG "NIFTI Option I")
-
-## Optional Steps
-- **Save Input**: Save your configuration by going to the `File ` menu and clicking `Save Input`, or using the shortcut 'Ctrl+S'.
-- **Load Input**: Load a previously saved configuration by navigating to the `File` menu and selecting `Load Input` or pressing 'Ctrl+O'.
-
-## Run the Configuration
-When all fields are filled, click the `Run` button and monitor the radiomics calculation progress on the console.
-
+</div>
