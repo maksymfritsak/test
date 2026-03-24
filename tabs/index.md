@@ -41,10 +41,3 @@ Fritsak M, Bogowicz M, Vuong D, Dietsche F, Joye A, Guckenberger M,
 Tanadini-Lang S, Gabryś HS. *Z-Rad: the Swiss pocket knife for radiomics*.  
 Radiotherapy and Oncology. 2025;206:S3712–S3714.  
 [https://doi.org/10.1016/S0167-8140(25)01196-X](https://doi.org/10.1016/S0167-8140(25)01196-X)
-
----
-
-## Contact Us
-
-Should you have any questions, feel free to reach out via email at  
-[zrad@usz.ch](mailto:zrad@usz.ch)
