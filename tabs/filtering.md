@@ -39,4 +39,8 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 
 ![Filtering Results](../figures/Filtering_Res.png "Filtering Results")
 
+*Figure: A) no filtering; B) after 3D mean filter (mirror padding, 5 voxel support);  
+C) after 3D LoG filter (mirror padding, 1.5 mm scale, 4σ cutoff);  
+D) after 3D Daubechies 3 wavelet filter (mirror padding, 1st level, LLH response, pseudo-rotational invariance).*
+
 # Examples
