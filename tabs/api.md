@@ -13,11 +13,11 @@ Below, you will find a detailed guide on how to leverage the capabilities of Z-R
 However, before we dive into the specifics, let's start by installing the latest version of Z-Rad:
 
 ```python
-pip install ...
+pip install zrad
 ```
 
-## RAD API User Guide
+# Preprocessing
 
-* [Resampling](../api_prep.md)
-* [Filtering](../api_filt.md)
-* [Radiomics](../api_rad.md)
+# Filtering
+
+# Radiomics
