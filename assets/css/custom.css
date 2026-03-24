@@ -1,0 +1,17 @@
+.site-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.site-nav li {
+  margin: 0.35rem 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
