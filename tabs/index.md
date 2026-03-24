@@ -49,7 +49,6 @@ https://doi.org/10.1016/S0167-8140(25)01196-X
 
 ## Contact Us
 
-<div style="text-align: justify;">
 Should you have any questions, feel free to reach out via email at 
 <a href="mailto:zrad@usz.ch">zrad@usz.ch</a>.
 
