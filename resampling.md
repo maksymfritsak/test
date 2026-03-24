@@ -1,4 +1,6 @@
-# RAD: Resampling
+# Z-Rad: Data Preprocessing
+
+![Resampling Tab](prepr_tab.png "Preprocessing Tab")
 
 <div style="text-align: justify;">
 
