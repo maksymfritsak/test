@@ -111,4 +111,4 @@ Intensity–volume histogram features, as well as computationally expensive feat
 * Without outlier removal 
 * Intensity Range:`-400, 400`
 * Texture Aggregation Method `3D, averaged`  
-*Bin Size: `32`
+* Bin Size: `32`
