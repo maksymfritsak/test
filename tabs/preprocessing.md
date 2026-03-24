@@ -89,7 +89,7 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 
 # Examples: 
 
-## IBSI I Config. B (DICOM): 
+## DICOM: 
 
 ![Config. B](../figures/prepr_B.png "Config. B")
 
@@ -99,7 +99,7 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 * Linear ROI interpolation;
 * ROI rounding threshold 0.5.
 
-## IBSI I Config. E (NIFTI):
+## NIFTI:
 
 ![Config. E](../figures/prepr_E.png "Config. E")
 
