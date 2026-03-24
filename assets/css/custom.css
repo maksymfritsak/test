@@ -16,23 +16,46 @@
   text-decoration: underline;
 }
 
-/* Wider overall page */
+/* Desktop layout */
 .wrapper {
   width: 1500px;
   max-width: none;
   margin: 0 auto;
 }
 
-/* Keep sidebar fixed, same size, just shifted a bit */
 header {
   position: fixed;
   left: 60px;
   width: 270px;
 }
 
-/* This is the important part */
 section {
   float: left;
   width: 900px;
   max-width: none;
+  margin-left: 380px;
+}
+
+/* Mobile/tablet responsive layout */
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  header {
+    position: static;
+    left: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
