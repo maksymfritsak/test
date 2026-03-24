@@ -14,7 +14,7 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 </div>
 
-## RAD User Manual
+## Z-Rad User Manual
 
 - [Get Started](get_started.md)
 - [Resampling](resampling.md)
@@ -23,7 +23,7 @@ Designed for both zero-programming users and advanced researchers, it combines a
 
 ---
 
-## Advanced: RAD API
+## Advanced: Z-Rad API
 
 For advanced usage, we recommend using Z-Rad via its Python API, which can be seamlessly integrated into research workflows. The [RAD API documentation](api.md) provides guides and examples to help you get started.
 
