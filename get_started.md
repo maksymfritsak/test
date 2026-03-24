@@ -4,12 +4,13 @@
 To run Z-Rad on your data, it must be organized in a specific directory structure. To process `folder_1`, `folder_2`, …, `folder_n`, the data should be arranged as follows:
 ```
 main_path/
-└── data_folder/
-    ├── folder_1/
-    ├── folder_2/
-    ├── ...
-    └── folder_n/
+      └── data_folder/
+                 ├── folder_1/
+                 ├── folder_2/
+                 ├── ...
+                 └── folder_n/
 ```
+
 <div style="text-align: justify;">
 
 The `data_folder` refers to the project directory, while `folder_1`, `folder_2`, …, `folder_n` denote the individual folders containing the imaging data to be processed.
@@ -17,6 +18,7 @@ The `data_folder` refers to the project directory, while `folder_1`, `folder_2`,
 For projects involving multiple imaging modalities or data types, it is recommended to organize the data using a consistent folder structure, as illustrated below for PET/CT studies:
 
 </div>
+
 ```
 main_path/
 ├── PET/
