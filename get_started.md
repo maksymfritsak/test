@@ -21,17 +21,17 @@ For projects involving multiple imaging modalities or data types, it is recommen
 
 ```
 main_path/
-├── PET/
-│   ├── folder_1/
-│   ├── folder_2/
-│   ├── ...
-│   └── folder_n/
-└── CT/
-    ├── folder_1/
-    ├── folder_2/
-    ├── folder_2/
-    ├── ...
-    └── folder_n/
+      ├── PET/
+      │    ├── folder_1/
+      │    ├── folder_2/
+      │    ├── ...
+      │    └── folder_n/
+      └── CT/
+           ├── folder_1/
+           ├── folder_2/
+           ├── folder_2/
+           ├── ...
+           └── folder_n/
 ```
 
 
