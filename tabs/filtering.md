@@ -46,8 +46,18 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
   </p>
 </div>
 
-# Examples (Fig. 1B)
+# Example
+
+## Mean (Fig. 1B)
 
 ![Filtering Mean](../figures/Filt_mean.png "Filtering Mean")
 
 * 3D mean filter (reflect padding, 5 voxel support)
+
+## LoG (Fig. 1C)
+
+![Filtering Mean](../figures/Filt_LoG.png "Filtering Mean")
+
+* 3D LoG filter (reflect padding, 1.5 mm scale, 4σ cutoff)
+
+
