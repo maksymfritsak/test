@@ -40,4 +40,14 @@ Intensity–volume histogram features, as well as computationally expensive feat
 </li>
 </ul>
 
+<p><b>Note:</b></p>
+
+<ul>
+<li>
+<b>Save Input:</b> Save your configuration by going to the File menu and clicking Save Input, or using the shortcut <code>Ctrl+S</code>.
+</li>
+<li>
+<b>Load Input:</b> Load a previously saved configuration by navigating to the File menu and selecting Load Input or pressing <code>Ctrl+O</code>.
+</li>
+</ul>
 </div>
