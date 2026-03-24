@@ -42,20 +42,20 @@ Intensity–volume histogram features, as well as computationally expensive feat
 
 </div>
 
-<p><b> GUI Available Radiomic Features:</b></p>
+<p><b>GUI Available Radiomic Features:</b></p>
 
-<div style="overflow-x: auto;">
+<div style="overflow-x: auto; overflow-y: auto; max-height: 400px;">
 
 <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; text-align: left;">
 
 <tr>
-<th>Morphological features</th>
-<th>Local intensity features</th>
-<th>Intensity-based statistical features</th>
-<th>Intensity histogram features</th>
-<th>GLCM features</th>
-<th>GLRLM features</th>
-<th>GLSZM / GLDZM features</th>
+<th style="position: sticky; top: 0; background: white;">Morphological features</th>
+<th style="position: sticky; top: 0; background: white;">Local intensity features</th>
+<th style="position: sticky; top: 0; background: white;">Intensity-based statistical features</th>
+<th style="position: sticky; top: 0; background: white;">Intensity histogram features</th>
+<th style="position: sticky; top: 0; background: white;">GLCM features</th>
+<th style="position: sticky; top: 0; background: white;">GLRLM features</th>
+<th style="position: sticky; top: 0; background: white;">GLSZM / GLDZM features</th>
 </tr>
 
 <tr><td>Volume (mesh)</td><td>Local intensity peak</td><td>Mean</td><td>Mean</td><td>Joint maximum</td><td>Short runs emphasis</td><td>Small zone / distance emphasis</td></tr>
