@@ -26,11 +26,13 @@ Designed for both zero-programming users and advanced researchers, it combines a
 ## Advanced: Z-Rad API
 
 <div style="text-align: justify;">
-  
-For advanced usage, we recommend using Z-Rad via its Python API, which can be seamlessly integrated into research workflows. The [RAD API documentation](api.md) provides guides and examples to help you get started.
-
+For advanced usage, we recommend using Z-Rad via its Python API, which can be seamlessly integrated into research workflows. 
+The <a href="api.md">Z-Rad API documentation</a> provides guides and examples to help you get started.
 </div>
 
 ## Contact Us
 
-Should you have any questions, feel free to reach out via email at [zrad@usz.ch](mailto:zrad@usz.ch).
+<div style="text-align: justify;">
+Should you have any questions, feel free to reach out via email at 
+<a href="mailto:zrad@usz.ch">zrad@usz.ch</a>.
+</div>
