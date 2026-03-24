@@ -97,23 +97,6 @@ After configuring all parameters, press RUN <b>(14)</b> to start the preprocessi
 * Linear ROI interpolation;
 * ROI rounding threshold 0.5.
 
-## IBSI I Config. B (NIFTI): 
-
-* Studied structure: mask;
-* NIfTI image: phantom.nii.gz;
-* Slice-wise resampling (2D);
-* Linear interpolation 2mm × 2mm (axial);
-* Linear ROI interpolation;
-* ROI rounding threshold 0.5.
-
-## IBSI I Config. C and D (DICOM):
-
-* Studied structure: GTV-1;
-* Single volume (3D) resampling;
-* Linear interpolation 2mm × 2mm × 2mm;
-* Linear ROI interpolation;
-* ROI rounding threshold 0.5.
-
 ## IBSI I Config. E (NIFTI):
 
 * Studied structure: mask;
