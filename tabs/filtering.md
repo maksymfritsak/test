@@ -62,7 +62,7 @@ By pressing RUN <b>(3)</b>, the filtering process is executed, and the filtered 
 
 ## Daubechies 3 Wavelet (Fig. 1D)
 
-![Filtering Mean](../figures/Filt_LoG.png "Filtering Mean")
+![Filtering Mean](../figures/Filt_wavelet.png "Filtering Mean")
 
 * 3D Daubechies 3 wavelet filter (reflect padding, 1st level, LLH response, pseudo-rotational invariance)
 
