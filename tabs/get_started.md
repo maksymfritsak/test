@@ -1,5 +1,8 @@
-## Supported Platforms: Windows, macOS, Linux
-
+## Support 
+ * Windows, macOS, Linux
+ * DICOM, NIfTI
+ * CT, MRI, PET, Mammography, 3D Dose Distribution
+   
 ## Data Structure
 To run Z-Rad on your data, it must be organized in a specific directory structure. To process `folder_1`, `folder_2`, …, `folder_n`, the data should be arranged as follows:
 ```
