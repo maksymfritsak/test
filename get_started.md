@@ -1,31 +1,36 @@
-## Supported Platforms: Windows, MacOS, Linux
+## Supported Platforms: Windows, macOS, Linux
 
-# Available Data Types
-RAD supports both DICOM and NIfTI input file formats, facilitating diverse medical imaging workflows.
+## Data Structure
 
-## DICOM: 
-Each patient's folder should contain exactly one DICOM image series and not more than one RTstruct file.
-Rad supports only files with DICOM Modality tag (0008, 0060) equals CT, PT, MR, or RTSTRUCT.
+To run Z-Rad on your data, it must be organized in a specific directory structure. To process `folder_1`, `folder_2`, …, `folder_n`, the data should be arranged as follows:
 
-* **CT**: RAD checks whether the CT is already provided in Hounsfiled Units (HU), by checking the DICOM Pixel Representation tag (0028, 0103).
-  If pixel representation is unsigned (no negative values in the image array) it is assumed to be in raw units, thus it will be converted to the HU with the help of Rescale Intercept (0028,1052) and Rescale Slope (0028,1053) tags.
-  For the signed pixel representation data is assumed to be already in HU.
-* **PT**: RAD calculates the SUV with the body weight strategy. For this the following DICOM tags should be present: Radiopharmaceutical Start Time (0018,1072), Decay Correction (0054,1102), Radionuclide Half Life (0018,1075), Series Time (0008,0031), and Patient's Weight (0010,1030).
-* **MR**: RAD reads raw 3D image from the DICOM array without any preprocessing.
+main_path/
+└── data_folder/
+    ├── folder_1/
+    ├── folder_2/
+    ├── ...
+    └── folder_n/
 
-## NIfTI:
-RAD handles both `.nii` and `.nii.gz` file formats.
+The `data_folder` refers to the project directory, while `folder_1`, `folder_2`, …, `folder_n` denote the individual folders containing the imaging data to be processed.
 
-* **CT, MR, PT**: All necessary data conversions are assumed to be pre-handled (CT is already converted to HU and PET is already converted to SUV); RAD will only read the raw 3D image.
+For projects involving multiple imaging modalities or data types, it is recommended to organize the data using a consistent folder structure, as illustrated below for PET/CT studies:
 
-# Preparing Your Data
-## Organizing Patient Data:
-* Locate all patient folders into a single directory;
-* RECOMMENDED: Rename patient folders using integers (e.g., 1, 14, 325) for simplicity. Avoid special symbols or letters;
-* Each folder should represent a single patient with a single image inside.
+main_path/
+├── PET/
+│   ├── folder_1/
+│   ├── folder_2/
+│   ├── ...
+│   └── folder_n/
+└── CT/
+    ├── folder_1/
+    ├── folder_2/
+    ├── ...
+    └── folder_n/
 
-## Standardizing Structure Names:
-* Ensure consistency in the naming of studied structures across all patients. For example, in a study of the prostate CTV across 150 patients, each patient should have an identically named structure, e.g., `prostate_CTV`. Avoid variations like `PROSTATE_CTV` or `prostate_1`, as these are assumed to represent different ROIs.
+Z-Rad supports both **DICOM** and **NIfTI** file formats for the folder content.
 
-## File Naming Conventions for NIfTI:
-* Maintain the same file name for the patient's image (e.g. 'image.nii.gz'). The image file name should be identical among the studied patients.
+- **DICOM data:**  
+  Each `folder_i` must contain exactly one imaging series (e.g., PET, CT, MRI, mammography, or 3D dose distribution) and no more than one RTSTRUCT file. If multiple RTSTRUCT files are present, only the first detected file will be used.
+
+- **NIfTI data:**  
+  Each `folder_i` may contain multiple imaging modalities along with their corresponding segmentation masks, stored as `.nii` or `.nii.gz` files. To ensure consistent processing across folders, image files that are intended to be processed together must have identical filenames in all folders.
