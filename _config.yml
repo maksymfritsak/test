@@ -11,15 +11,15 @@ navigation:
     url: /tabs/get_started.html
 
   - title: GUI
-    url: "#"
-  - title: Preprocessing
-    url: /tabs/preprocessing.html
-  - title: Filtering
-    url: /tabs/filtering.html
-  - title: Radiomics
-    url: /tabs/radiomics.html
-  - title: Visualization
-    url: /tabs/visualization.html
+    children:
+      - title: Preprocessing
+        url: /tabs/preprocessing.html
+      - title: Filtering
+        url: /tabs/filtering.html
+      - title: Radiomics
+        url: /tabs/radiomics.html
+      - title: Visualization
+        url: /tabs/visualization.html
 
   - title: API (Advanced)
     url: /tabs/api.html
