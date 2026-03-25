@@ -16,33 +16,6 @@
   text-decoration: underline;
 }
 
-.site-nav .nav-parent > a,
-.site-nav .nav-section {
-  display: block;
-  font-weight: 600;
-}
-
-.site-nav .nav-submenu {
-  display: none;
-  list-style: none;
-  padding-left: 1.2rem;
-  margin-top: 0.35rem;
-  margin-bottom: 0.5rem;
-}
-
-.site-nav .nav-parent.open > .nav-submenu {
-  display: block;
-}
-
-.site-nav .nav-submenu li {
-  margin: 0.2rem 0;
-}
-
-.site-nav .nav-submenu a {
-  font-weight: 400;
-  font-size: 0.95rem;
-}
-
 .site-nav a.active {
   font-weight: 700;
 }
