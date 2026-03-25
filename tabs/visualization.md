@@ -12,6 +12,14 @@ The upper part <b>(1)</b> of the Visualization tab is identical to the Preproces
 By pressing RUN <b>(2)</b>, the images are loaded and displayed in a separate dedicated window.
 </p>
 
+</div>
+
+<p align="center">
+<img src="../figures/Visual_window.png" alt="Visualization Window" title="Visualization Window" width="80%">
+</p>
+
+<div style="text-align: justify;">
+
 <p>
 The upper part <b>(2.1)</b> displays three projections. These can be scrolled through and zoomed in, and double-clicking on a selected projection opens it in full screen for easier visual assessment.
 </p>
