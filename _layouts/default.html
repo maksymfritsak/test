@@ -22,7 +22,36 @@
         <nav class="site-nav">
           <ul>
             {% for item in site.navigation %}
-              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+              {% assign is_open = false %}
+              {% if item.children %}
+                {% for child in item.children %}
+                  {% if page.url == child.url %}
+                    {% assign is_open = true %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+
+              <li class="{% if item.children %}nav-parent{% endif %}{% if is_open %} open{% endif %}">
+                {% if item.url %}
+                  <a href="{{ item.url | relative_url }}" class="{% if page.url == item.url %}active{% endif %}">
+                    {{ item.title }}
+                  </a>
+                {% else %}
+                  <span class="nav-section">{{ item.title }}</span>
+                {% endif %}
+
+                {% if item.children %}
+                  <ul class="nav-submenu">
+                    {% for child in item.children %}
+                      <li>
+                        <a href="{{ child.url | relative_url }}" class="{% if page.url == child.url %}active{% endif %}">
+                          {{ child.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
             {% endfor %}
           </ul>
         </nav>
