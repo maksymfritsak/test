@@ -11,6 +11,7 @@ navigation:
     url: /tabs/get_started.html
 
   - title: GUI
+    url: /tabs/gui.html
     children:
       - title: Preprocessing
         url: /tabs/preprocessing.html
