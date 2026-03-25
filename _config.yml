@@ -10,9 +10,8 @@ navigation:
   - title: Get Started
     url: /tabs/get_started.html
 
-  - title: "---"   # separator 1
-    url: ""
-
+  - title: GUI
+    url: "#"
   - title: Preprocessing
     url: /tabs/preprocessing.html
   - title: Filtering
@@ -21,9 +20,6 @@ navigation:
     url: /tabs/radiomics.html
   - title: Visualization
     url: /tabs/visualization.html
-
-  - title: "---"   # separator 2
-    url: ""
 
   - title: API (Advanced)
     url: /tabs/api.html
