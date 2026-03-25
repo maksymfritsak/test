@@ -23,7 +23,7 @@ Designed for both zero-programming users and advanced researchers, it combines a
 - [Preprocessing]({{ '/tabs/preprocessing.html' | relative_url }})
 - [Filtering]({{ '/tabs/filtering.html' | relative_url }})
 - [Radiomics]({{ '/tabs/radiomics.html' | relative_url }})
-- Visualization (coming soon)
+- [Visualization]({{ '/tabs/visualization.html' | relative_url }})
 
 ---
 
